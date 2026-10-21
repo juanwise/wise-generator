@@ -14,4 +14,5 @@ public class SearchGamesGG {
     String searchMode;
     StreamGG stream;
     int gameId;
+    boolean includeCountry;
 }

@@ -20,10 +20,12 @@ import thumbnailgenerator.dto.Thumbnail;
 import thumbnailgenerator.exception.FighterImageSettingsNotFoundException;
 import thumbnailgenerator.service.games.SmashUltimateCharacterService;
 import thumbnailgenerator.service.json.JSONReaderService;
+import thumbnailgenerator.utils.country.CountryUtils;
 
 @Service
 public class ThumbnailFileService extends FileService<Thumbnail, Round> {
 
+    private static final int COUNTRY_INDEX = 7;
     private int gameIndex = 3;
     private @Autowired SmashUltimateCharacterService
             smashUltimateCharacterService;
@@ -52,6 +54,7 @@ public class ThumbnailFileService extends FileService<Thumbnail, Round> {
                                      .game(rootThumbnail.getGame())
                                      .imageSettings(imageSettings)
                                      .locally(saveLocally)
+                                     .showFlags(true)
                                      .round(round.getRoundName())
                                      .date(rootThumbnail.getDate())
                                      .players(round.getPlayers())
@@ -103,7 +106,21 @@ public class ThumbnailFileService extends FileService<Thumbnail, Round> {
             }
             playerCharactersList.add(new Fighter(charactersList.get(i), charactersList.get(i), alt, false));
         }
-        return new Player(parameters.get(0 + playerIndex), playerCharactersList);
+        return new Player(parameters.get(0 + playerIndex), playerCharactersList,
+                readCountryCode(parameters, playerIndex));
+    }
+
+    /**
+     * Optional columns after the round: player 1's country, player 2's country.
+     * Accepts ISO codes ("PT") or English names ("Portugal"). Empty or unknown
+     * values mean no flag.
+     */
+    private String readCountryCode(List<String> parameters, int playerIndex) {
+        int index = COUNTRY_INDEX + playerIndex;
+        if (parameters.size() <= index) {
+            return null;
+        }
+        return CountryUtils.toCode(parameters.get(index));
     }
 
     private void setPlayerFlip(List<Player> players, ImageSettings imageSettings, Game game)

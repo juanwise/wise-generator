@@ -3,13 +3,17 @@ package thumbnailgenerator.ui.controller;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 
+import java.io.ByteArrayInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ResourceBundle;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -37,8 +41,11 @@ import thumbnailgenerator.dto.startgg.tournament.PhaseGroupNodeGG;
 import thumbnailgenerator.dto.startgg.tournament.TournamentGG;
 import thumbnailgenerator.enums.LoadingType;
 import thumbnailgenerator.service.StartGGService;
+import thumbnailgenerator.service.Top8Service;
+import thumbnailgenerator.service.Top8StandingsService;
 import thumbnailgenerator.ui.loading.LoadingState;
 import thumbnailgenerator.utils.startgg.QueryUtils;
+import thumbnailgenerator.utils.startgg.StartGGUrlUtils;
 import thumbnailgenerator.service.ThumbnailService;
 import thumbnailgenerator.service.TournamentService;
 import thumbnailgenerator.ui.factory.alert.AlertFactory;
@@ -51,6 +58,12 @@ public class FromStartGGController implements Initializable {
     private TextField authToken;
     @FXML
     private TextField tournamentURL;
+    @FXML
+    private TextField standingsURL;
+    @FXML
+    private CheckBox includeFlags;
+    @FXML
+    private Button genTop8;
     @FXML
     private Spinner<Integer> charactersPerPlayer;
     @FXML
@@ -79,6 +92,9 @@ public class FromStartGGController implements Initializable {
     private @Autowired ThumbnailService thumbnailService;
     private @Autowired StartGGService startGGService;
     private @Autowired JSONReaderService jsonReader;
+    private @Autowired Top8Service top8Service;
+    private @Autowired Top8StandingsService top8StandingsService;
+    private @Autowired ExecutorService executorService;
 
     @Value("${startgg.api.token.path}")
     private String startGGAuthTokenPath;
@@ -155,19 +171,22 @@ public class FromStartGGController implements Initializable {
                 switch (mode) {
                     case 0:
                         query = QueryUtils.getSetsByEvent(
-                            eventSelect.getSelectionModel().getSelectedItem().getId(), ++readPages);
+                            eventSelect.getSelectionModel().getSelectedItem().getId(), ++readPages,
+                            includeFlags.isSelected());
                         mainBody = "event";
                         break;
 
                     case 1:
                         query = QueryUtils.getSetsByPhase(
-                            phaseSelect.getSelectionModel().getSelectedItem().getId(), ++readPages);
+                            phaseSelect.getSelectionModel().getSelectedItem().getId(), ++readPages,
+                            includeFlags.isSelected());
                         mainBody = "phase";
                         break;
 
                     case 2:
                         query = QueryUtils.getSetsByPhaseGroup(
-                            phaseGroupSelect.getSelectionModel().getSelectedItem().getId(), ++readPages);
+                            phaseGroupSelect.getSelectionModel().getSelectedItem().getId(), ++readPages,
+                            includeFlags.isSelected());
                         mainBody = "phaseGroup";
                         break;
                     default:
@@ -181,6 +200,7 @@ public class FromStartGGController implements Initializable {
                         .searchMode(mainBody)
                         .stream(selectedStream)
                         .gameId(selectedEvent.getVideoGameGG().getId())
+                        .includeCountry(includeFlags.isSelected())
                         .build();
                 var queryResponse = startGGService.queryStartGGForGames(searchGamesGG);
                 if(totalPages < 0) {
@@ -207,6 +227,88 @@ public class FromStartGGController implements Initializable {
         }finally {
             startGGService.closeClient();
         }
+    }
+
+    /**
+     * Reads the top 8 of the event in the pasted Start.gg standings link and
+     * generates the Top 8 graphic with the selected tournament's settings.
+     * Each placement shows the character that player used the most.
+     */
+    public void generateTop8FromStandings() {
+        LOGGER.info("Generating Top 8 from Start.gg standings link.");
+        var tournament = tournamentService.getSelectedTournament();
+        if (tournament == null) {
+            LOGGER.error("User did not select a tournament.");
+            AlertFactory.displayWarning("A tournament must be chosen before generating the Top 8.");
+            return;
+        }
+        var url = standingsURL.getText();
+        if (url == null || url.isBlank()) {
+            AlertFactory.displayWarning("Paste the Start.gg standings link of the event first.");
+            return;
+        }
+        try {
+            StartGGUrlUtils.extractEventSlug(url);
+        } catch (IllegalArgumentException e) {
+            LOGGER.error("User provided a not valid Start.gg event link -> {}", url);
+            AlertFactory.displayError(e.getMessage());
+            return;
+        }
+        try {
+            startGGService.initClient(authToken.getText());
+        } catch (IllegalArgumentException e) {
+            LOGGER.error("Could not connect to Start.gg due to a authorization token issue.");
+            LOGGER.catching(e);
+            AlertFactory.displayError("Could not connect to Start.gg due to a authorization token issue",
+                    ExceptionUtils.getStackTrace(e));
+            return;
+        }
+
+        var characters = charactersPerPlayer.getValue();
+        var saveImagesLocally = saveLocally.isSelected();
+        var top8Task = new Task<Top8StandingsService.Result>() {
+            @Override
+            protected Top8StandingsService.Result call() throws Exception {
+                var result = top8StandingsService.buildTop8Script(url, tournament, characters);
+                var inputStream = new ByteArrayInputStream(
+                        result.getScript().getBytes(StandardCharsets.UTF_8));
+                top8Service.generateTop8FromFile(inputStream, saveImagesLocally);
+                return result;
+            }
+        };
+        genTop8.setDisable(true);
+        top8Task.setOnRunning(e -> loadingState.update(true, LoadingType.TOP8, 1, 1));
+        top8Task.setOnSucceeded(e -> {
+            finishTop8Generation();
+            var result = top8Task.getValue();
+            var message = new StringBuilder("Top 8 of \"" + result.getEventName()
+                    + "\" was successfully generated and saved!");
+            result.getWarnings().forEach(w -> message.append(System.lineSeparator()).append("- ").append(w));
+            LOGGER.info(message.toString());
+            if (result.getWarnings().isEmpty()) {
+                AlertFactory.displayInfo(message.toString());
+            } else {
+                AlertFactory.displayWarning(message.toString());
+            }
+        });
+        top8Task.setOnFailed(e -> {
+            finishTop8Generation();
+            Throwable ex = top8Task.getException();
+            LOGGER.error("Could not generate Top 8 from standings.", ex);
+            if (ex instanceof IllegalArgumentException) {
+                AlertFactory.displayError(ex.getMessage());
+            } else {
+                AlertFactory.displayError("Could not generate Top 8 from Start.gg standings",
+                        ExceptionUtils.getStackTrace(ex));
+            }
+        });
+        executorService.submit(top8Task);
+    }
+
+    private void finishTop8Generation() {
+        loadingState.disableLoading();
+        genTop8.setDisable(false);
+        startGGService.closeClient();
     }
 
     public void generateThumbnails(){

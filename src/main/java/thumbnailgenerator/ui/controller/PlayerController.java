@@ -7,10 +7,13 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
 
+import javafx.beans.binding.Bindings;
+import javafx.beans.value.ObservableBooleanValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.control.TextField;
@@ -30,12 +33,16 @@ import thumbnailgenerator.service.games.GameEnumService;
 import thumbnailgenerator.service.Top8Service;
 import thumbnailgenerator.ui.composite.CharacterSelect;
 import thumbnailgenerator.ui.factory.alert.AlertFactory;
+import thumbnailgenerator.utils.country.CountryOption;
+import thumbnailgenerator.utils.country.CountryUtils;
 
 @Component
 @Scope("prototype")
 public class PlayerController implements Initializable {
     @FXML
     protected TextField player;
+    @FXML
+    protected ComboBox<CountryOption> country;
     @FXML
     protected Hyperlink icon2Link;
     @FXML
@@ -54,6 +61,26 @@ public class PlayerController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         initCharacterBox();
+        initCountryBox();
+    }
+
+    private void initCountryBox() {
+        country.getItems().setAll(CountryUtils.getOptions());
+        country.getSelectionModel().select(CountryOption.NONE);
+    }
+
+    /** The country selector is only usable while "Show country flags" is checked. */
+    public void bindCountryEnabled(ObservableBooleanValue flagsEnabled) {
+        country.disableProperty().bind(Bindings.not(flagsEnabled));
+    }
+
+    public String getCountryCode() {
+        var selected = country.getSelectionModel().getSelectedItem();
+        return selected == null ? null : selected.getCode();
+    }
+
+    public void setCountryCode(String countryCode) {
+        country.getSelectionModel().select(CountryUtils.findOption(countryCode));
     }
 
     protected void initCharacterBox(){
@@ -202,7 +229,7 @@ public class PlayerController implements Initializable {
                     return new Fighter(charName, urlName, alt, isFlip);
                 })
                 .collect(Collectors.toList());
-        return new Player(getPlayer(), characterList);
+        return new Player(getPlayer(), characterList, getCountryCode());
     }
 
     public String toString(){

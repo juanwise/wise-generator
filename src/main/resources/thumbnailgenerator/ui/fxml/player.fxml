@@ -5,11 +5,12 @@
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="thumbnailgenerator.ui.controller.PlayerController"
-            prefHeight="180.0" prefWidth="200.0"
+            prefHeight="215.0" prefWidth="200.0"
             stylesheets="@../styles/player.css">
 
     <VBox spacing="10" alignment="CENTER">
         <TextField fx:id="player" styleClass="player"/>
+        <ComboBox fx:id="country" styleClass="player" promptText="Country (for flag)"/>
         <VBox spacing="10" alignment="CENTER">
             <GridPane fx:id="characterGrid" hgap="5" vgap="5" alignment="CENTER">
                 <columnConstraints>

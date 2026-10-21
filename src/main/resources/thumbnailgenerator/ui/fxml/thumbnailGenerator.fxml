@@ -83,6 +83,7 @@
             <!--Save UI-->
             <VBox spacing="10" alignment="CENTER">
                 <CheckBox fx:id="saveLocally" text="Save/Load fighters' image locally"/>
+                <CheckBox fx:id="showFlags" text="Show players' country flags"/>
                 <HBox alignment="CENTER" spacing="10">
                     <Button fx:id="saveButton" text="Save" minWidth="140" onAction="#createThumbnail"/>
                     <Button fx:id="fromFile" text="Generate from file" minWidth="115" onAction="#createMultipleThumbnails"/>

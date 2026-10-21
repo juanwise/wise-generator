@@ -18,6 +18,7 @@ import thumbnailgenerator.dto.startgg.search.SearchGamesGG;
 import thumbnailgenerator.enums.games.ssbm.SmashMeleeEnum;
 import thumbnailgenerator.service.games.GameEnumService;
 import thumbnailgenerator.ui.factory.alert.AlertFactory;
+import thumbnailgenerator.utils.country.CountryUtils;
 import thumbnailgenerator.service.json.JSONReaderService;
 
 import java.util.ArrayList;
@@ -112,7 +113,7 @@ public class StartGGService {
 
         set.getSetNodes().forEach(setNodeGG -> {
             if(setNodeGG.hasStream()) {
-                var setNode = setNodeGGToString(setNodeGG, charactersPerPlayer);
+                var setNode = setNodeGGToString(setNodeGG, charactersPerPlayer, searchGamesGG.isIncludeCountry());
                 if(searchGamesGG.getStream() != null
                         && !searchGamesGG.getStream().isNull()) {
                     if (searchGamesGG.getStream().getStreamName().equals(setNodeGG.getStreamName())){
@@ -133,7 +134,7 @@ public class StartGGService {
         foundSets.append(System.lineSeparator());
     }
 
-    private Game findGameByStartGGId(int startGGId) {
+    public Game findGameByStartGGId(int startGGId) {
         return Arrays.stream(Game.values())
                 .filter(g -> g.getStartGGId() == startGGId)
                 .findFirst()
@@ -191,6 +192,10 @@ public class StartGGService {
     }
 
     public String setNodeGGToString(SetNodeGG setNodeGG, int charactersPerPlayer){
+        return setNodeGGToString(setNodeGG, charactersPerPlayer, false);
+    }
+
+    public String setNodeGGToString(SetNodeGG setNodeGG, int charactersPerPlayer, boolean includeCountry){
         var games = setNodeGG.getGames();
         var roundName = setNodeGG.getRoundName();
         String player1 = setNodeGG.getEntrant(0).getName();
@@ -213,18 +218,28 @@ public class StartGGService {
         return player1NoTeam + ";" + player2NoTeam + ";"
                 + player1Characters + ";" + player2Characters + ";"
                 + player1Alts + ";" + player2Alts + ";"
-                + roundName;
+                + roundName
+                + (includeCountry ? ";" + countryCode(setNodeGG, 0) + ";" + countryCode(setNodeGG, 1) : "");
+    }
+
+    private String countryCode(SetNodeGG setNodeGG, int entrantIndex){
+        var code = CountryUtils.toCode(setNodeGG.getEntrant(entrantIndex).getCountry());
+        return code == null ? "" : code;
     }
 
     private String findCodeByStartggId(int mostUsedCharacter) {
+        return findCodeByStartggId(eventGame, mostUsedCharacter);
+    }
+
+    public String findCodeByStartggId(Game game, int mostUsedCharacter) {
         //Sheik / Zelda
         if (mostUsedCharacter == 628) {
             return SmashMeleeEnum.SHEIK.getCode();
         }
-        var result = gameEnumService.findCharacterCodeByStartGGId(eventGame, mostUsedCharacter);
+        var result = gameEnumService.findCharacterCodeByStartGGId(game, mostUsedCharacter);
         if (result == null) {
             LOGGER.warn("Start.gg character id " + mostUsedCharacter
-                    + " is unknown for " + eventGame.getName());
+                    + " is unknown for " + game.getName());
             return "random";
         }
         return result;
