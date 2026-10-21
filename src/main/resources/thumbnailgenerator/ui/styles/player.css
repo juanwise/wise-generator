@@ -1,0 +1,17 @@
+.player{
+    -fx-min-width: 240;
+    -fx-pref-width: 240;
+}
+
+.fighter{
+    -fx-min-width: 160;
+    -fx-pref-width: 160;
+}
+
+.alt{
+    -fx-max-width: 60;
+}
+
+.icon{
+    height: 64;
+}

@@ -1,0 +1,167 @@
+{
+  "mirrorPlayer2": false,
+  "fighters": [
+    {
+      "fighter": "clairen",
+      "offset": [
+        -220,
+        0
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "fleet",
+      "offset": [
+        -250,
+        20
+      ],
+      "scale": 0.75,
+      "flip": false
+    },
+    {
+      "fighter": "forsburn",
+      "offset": [
+        -629,
+        -120
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "kragg",
+      "offset": [
+        -219,
+        -200
+      ],
+      "scale": 0.59,
+      "flip": false
+    },
+    {
+      "fighter": "loxodont",
+      "offset": [
+        -350,
+        -50
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "maypul",
+      "offset": [
+        -190,
+        -150
+      ],
+      "scale": 0.75,
+      "flip": false
+    },
+    {
+      "fighter": "orcane",
+      "offset": [
+        -280,
+        -100
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "ranno",
+      "offset": [
+        -464,
+        -250
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "wrastor",
+      "offset": [
+        -310,
+        -80
+      ],
+      "scale": 0.8,
+      "flip": false
+    },
+    {
+      "fighter": "zetterburn",
+      "offset": [
+        -266,
+        -20
+      ],
+      "scale": 0.67,
+      "flip": false
+    },
+    {
+      "fighter": "etalus",
+      "offset": [
+        -279,
+        20
+      ],
+      "scale": 0.45,
+      "flip": false
+    },
+    {
+      "fighter": "olympia",
+      "offset": [
+        -139,
+        60
+      ],
+      "scale": 0.85,
+      "flip": false
+    },
+    {
+      "fighter": "absa",
+      "offset": [
+        -160,
+        0
+      ],
+      "scale": 0.55,
+      "flip": false
+    },
+    {
+      "fighter": "galvan",
+      "offset": [
+        -500,
+        -150
+      ],
+      "scale": 0.55,
+      "flip": false
+    },
+    {
+      "fighter": "reina",
+      "offset": [
+        -400,
+        -100
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "slade",
+      "offset": [
+        -300,
+        0
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "gouie",
+      "offset": [
+        -300,
+        0
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "random",
+      "offset": [
+        64,
+        100
+      ],
+      "scale": 1.0,
+      "flip": false
+    }
+  ]
+}

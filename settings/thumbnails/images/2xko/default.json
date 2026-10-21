@@ -1,0 +1,149 @@
+{
+  "mirrorPlayer2": true,
+  "fighters": [
+    {
+      "fighter": "ahri",
+      "offset": [
+        -420,
+        50
+      ],
+      "scale": 0.45,
+      "flip": false
+    },
+    {
+      "fighter": "yasuo",
+      "offset": [
+        -750,
+        -100
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "darius",
+      "offset": [
+        -1110,
+        -100
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "ekko",
+      "offset": [
+        -450,
+        -30
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "illaoi",
+      "offset": [
+        -400,
+        -100
+      ],
+      "scale": 0.35,
+      "flip": false
+    },
+    {
+      "fighter": "braum",
+      "offset": [
+        -900,
+        -100
+      ],
+      "scale": 0.45,
+      "flip": false
+    },
+    {
+      "fighter": "jinx",
+      "offset": [
+        -350,
+        -200
+      ],
+      "scale": 0.45,
+      "flip": false
+    },
+    {
+      "fighter": "vi",
+      "offset": [
+        -430,
+        70
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "blitzcrank",
+      "offset": [
+        -750,
+        100
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "teemo",
+      "offset": [
+        -230,
+        -60
+      ],
+      "scale": 0.2,
+      "flip": false
+    },
+    {
+      "fighter": "warwick",
+      "offset": [
+        -800,
+        -100
+      ],
+      "scale": 0.35,
+      "flip": false
+    },
+    {
+      "fighter": "caitlyn",
+      "offset": [
+        -720,
+        50
+      ],
+      "scale": 1.7,
+      "flip": false
+    },
+    {
+      "fighter": "akali",
+      "offset": [
+        -100,
+        -150
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "senna",
+      "offset": [
+        -850,
+        -400
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "thresh",
+      "offset": [
+        -850,
+        -130
+      ],
+      "scale": 0.55,
+      "flip": false
+    },
+    {
+      "fighter": "random",
+      "offset": [
+        64,
+        100
+      ],
+      "scale": 1.0,
+      "flip": false
+    }
+  ]
+}

@@ -1,0 +1,1049 @@
+{
+  "mirrorPlayer2": false,
+  "fighters": [
+    {
+      "fighter": "mario",
+      "offset": [
+        -45,
+        40
+      ],
+      "scale": 0.3,
+      "flip": false
+    },
+    {
+      "fighter": "donkey_kong",
+      "offset": [
+        -204,
+        -180
+      ],
+      "scale": 1.1,
+      "flip": false
+    },
+    {
+      "fighter": "link",
+      "offset": [
+        -296,
+        -20
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "samus",
+      "offset": [
+        -242,
+        140
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "yoshi",
+      "offset": [
+        5,
+        20
+      ],
+      "scale": 0.8,
+      "flip": false
+    },
+    {
+      "fighter": "kirby",
+      "offset": [
+        40,
+        140
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "fox",
+      "offset": [
+        71,
+        70
+      ],
+      "scale": 0.85,
+      "flip": false
+    },
+    {
+      "fighter": "pikachu",
+      "offset": [
+        -74,
+        -80
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "luigi",
+      "offset": [
+        96,
+        150
+      ],
+      "scale": 0.3,
+      "flip": false
+    },
+    {
+      "fighter": "ness",
+      "offset": [
+        78,
+        100
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "captain_falcon",
+      "offset": [
+        -333,
+        80
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "jigglypuff",
+      "offset": [
+        78,
+        30
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "peach",
+      "offset": [
+        -77,
+        -180
+      ],
+      "scale": 0.8,
+      "flip": false
+    },
+    {
+      "fighter": "bowser",
+      "offset": [
+        -265,
+        -200
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "ice_climbers",
+      "offset": [
+        0,
+        -50
+      ],
+      "scale": 0.25,
+      "flip": false
+    },
+    {
+      "fighter": "sheik",
+      "offset": [
+        -100,
+        70
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "zelda",
+      "offset": [
+        -473,
+        80
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "dr_mario",
+      "offset": [
+        60,
+        60
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "pichu",
+      "offset": [
+        40,
+        40
+      ],
+      "scale": 0.65,
+      "flip": false
+    },
+    {
+      "fighter": "falco",
+      "offset": [
+        81,
+        120
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "marth",
+      "offset": [
+        -811,
+        120
+      ],
+      "scale": 1.3,
+      "flip": false
+    },
+    {
+      "fighter": "young_link",
+      "offset": [
+        -44,
+        10
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "ganondorf",
+      "offset": [
+        -147,
+        60
+      ],
+      "scale": 0.8,
+      "flip": false
+    },
+    {
+      "fighter": "mewtwo",
+      "offset": [
+        -435,
+        50
+      ],
+      "scale": 0.75,
+      "flip": false
+    },
+    {
+      "fighter": "roy",
+      "offset": [
+        -443,
+        100
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "mr_game_and_watch",
+      "offset": [
+        100,
+        140
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "meta_knight",
+      "offset": [
+        -162,
+        -190
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "pit",
+      "offset": [
+        -471,
+        -50
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "zero_suit_samus",
+      "offset": [
+        -860,
+        20
+      ],
+      "scale": 0.85,
+      "flip": false
+    },
+    {
+      "fighter": "wario",
+      "offset": [
+        0,
+        90
+      ],
+      "scale": 0.8,
+      "flip": false
+    },
+    {
+      "fighter": "snake",
+      "offset": [
+        -163,
+        70
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "ike1",
+      "offset": [
+        -398,
+        20
+      ],
+      "scale": 1.0,
+      "flip": false
+    },
+    {
+      "fighter": "ike2",
+      "offset": [
+        -398,
+        0
+      ],
+      "scale": 0.97,
+      "flip": false
+    },
+    {
+      "fighter": "pokemon_trainer1",
+      "offset": [
+        -160,
+        80
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "pokemon_trainer2",
+      "offset": [
+        -248,
+        80
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "diddy_kong",
+      "offset": [
+        -61,
+        40
+      ],
+      "scale": 0.65,
+      "flip": false
+    },
+    {
+      "fighter": "lucas",
+      "offset": [
+        0,
+        30
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "sonic",
+      "offset": [
+        22,
+        20
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "king_dedede",
+      "offset": [
+        -109,
+        60
+      ],
+      "scale": 0.35,
+      "flip": false
+    },
+    {
+      "fighter": "olimar1",
+      "offset": [
+        0,
+        50
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "olimar2",
+      "offset": [
+        0,
+        -100
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "lucario",
+      "offset": [
+        -127,
+        0
+      ],
+      "scale": 0.65,
+      "flip": false
+    },
+    {
+      "fighter": "rob",
+      "offset": [
+        105,
+        70
+      ],
+      "scale": 1.1,
+      "flip": false
+    },
+    {
+      "fighter": "toon_link",
+      "offset": [
+        -102,
+        70
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "wolf",
+      "offset": [
+        -201,
+        70
+      ],
+      "scale": 0.85,
+      "flip": false
+    },
+    {
+      "fighter": "villager1",
+      "offset": [
+        -12,
+        30
+      ],
+      "scale": 0.65,
+      "flip": false
+    },
+    {
+      "fighter": "villager2",
+      "offset": [
+        -12,
+        30
+      ],
+      "scale": 0.65,
+      "flip": false
+    },
+    {
+      "fighter": "mega_man",
+      "offset": [
+        -411,
+        60
+      ],
+      "scale": 0.8,
+      "flip": false
+    },
+    {
+      "fighter": "wii_fit_trainer1",
+      "offset": [
+        -32,
+        -220
+      ],
+      "scale": 0.3,
+      "flip": false
+    },
+    {
+      "fighter": "wii_fit_trainer2",
+      "offset": [
+        -32,
+        -220
+      ],
+      "scale": 0.3,
+      "flip": false
+    },
+    {
+      "fighter": "rosalina_and_luma",
+      "offset": [
+        -344,
+        50
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "little_mac",
+      "offset": [
+        -53,
+        70
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "greninja",
+      "offset": [
+        -25,
+        -40
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "mii_brawler",
+      "offset": [
+        -77,
+        120
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "mii_swordfighter",
+      "offset": [
+        -346,
+        60
+      ],
+      "scale": 0.8,
+      "flip": false
+    },
+    {
+      "fighter": "mii_gunner1",
+      "offset": [
+        -233,
+        130
+      ],
+      "scale": 1.0,
+      "flip": false
+    },
+    {
+      "fighter": "mii_gunner2",
+      "offset": [
+        -233,
+        130
+      ],
+      "scale": 1.0,
+      "flip": false
+    },
+    {
+      "fighter": "palutena",
+      "offset": [
+        -484,
+        -150
+      ],
+      "scale": 0.75,
+      "flip": false
+    },
+    {
+      "fighter": "pac_man",
+      "offset": [
+        -5,
+        -20
+      ],
+      "scale": 0.48,
+      "flip": false
+    },
+    {
+      "fighter": "robin1",
+      "offset": [
+        -54,
+        60
+      ],
+      "scale": 0.8,
+      "flip": false
+    },
+    {
+      "fighter": "robin2",
+      "offset": [
+        -47,
+        60
+      ],
+      "scale": 0.8,
+      "flip": false
+    },
+    {
+      "fighter": "shulk",
+      "offset": [
+        -205,
+        -400
+      ],
+      "scale": 0.55,
+      "flip": false
+    },
+    {
+      "fighter": "bowser_jr1",
+      "offset": [
+        -34,
+        120
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "bowser_jr2",
+      "offset": [
+        -196,
+        -50
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "bowser_jr3",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "bowser_jr4",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "bowser_jr5",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "bowser_jr6",
+      "offset": [
+        -34,
+        120
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "bowser_jr7",
+      "offset": [
+        -115,
+        -20
+      ],
+      "scale": 1.7,
+      "flip": false
+    },
+    {
+      "fighter": "bowser_jr8",
+      "offset": [
+        -196,
+        -50
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "duck_hunt",
+      "offset": [
+        137,
+        -350
+      ],
+      "scale": 0.45,
+      "flip": false
+    },
+    {
+      "fighter": "ryu",
+      "offset": [
+        -559,
+        70
+      ],
+      "scale": 0.75,
+      "flip": false
+    },
+    {
+      "fighter": "cloud1",
+      "offset": [
+        -577,
+        -70
+      ],
+      "scale": 0.52,
+      "flip": false
+    },
+    {
+      "fighter": "cloud2",
+      "offset": [
+        -608,
+        -110
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "corrin1",
+      "offset": [
+        -55,
+        100
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "corrin2",
+      "offset": [
+        -56,
+        100
+      ],
+      "scale": 1.0,
+      "flip": false
+    },
+    {
+      "fighter": "bayonetta1",
+      "offset": [
+        -246,
+        -50
+      ],
+      "scale": 1.0,
+      "flip": false
+    },
+    {
+      "fighter": "bayonetta2",
+      "offset": [
+        -611,
+        -60
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "inkling1",
+      "offset": [
+        -60,
+        130
+      ],
+      "scale": 0.35,
+      "flip": false
+    },
+    {
+      "fighter": "inkling2",
+      "offset": [
+        -146,
+        -20
+      ],
+      "scale": 0.45,
+      "flip": false
+    },
+    {
+      "fighter": "ridley",
+      "offset": [
+        -466,
+        0
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "simon",
+      "offset": [
+        -275,
+        -250
+      ],
+      "scale": 0.65,
+      "flip": false
+    },
+    {
+      "fighter": "king_k_rool",
+      "offset": [
+        -40,
+        0
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "isabelle",
+      "offset": [
+        142,
+        -70
+      ],
+      "scale": 0.3,
+      "flip": false
+    },
+    {
+      "fighter": "incineroar",
+      "offset": [
+        -76,
+        50
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "piranha_plant",
+      "offset": [
+        54,
+        70
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "joker1",
+      "offset": [
+        -389,
+        70
+      ],
+      "scale": 0.55,
+      "flip": false
+    },
+    {
+      "fighter": "joker2",
+      "offset": [
+        -389,
+        70
+      ],
+      "scale": 0.55,
+      "flip": false
+    },
+    {
+      "fighter": "dq_hero1",
+      "offset": [
+        -79,
+        -40
+      ],
+      "scale": 0.55,
+      "flip": false
+    },
+    {
+      "fighter": "dq_hero2",
+      "offset": [
+        -500,
+        -860
+      ],
+      "scale": 0.85,
+      "flip": false
+    },
+    {
+      "fighter": "dq_hero3",
+      "offset": [
+        -79,
+        -40
+      ],
+      "scale": 0.55,
+      "flip": false
+    },
+    {
+      "fighter": "dq_hero4",
+      "offset": [
+        -79,
+        -40
+      ],
+      "scale": 0.55,
+      "flip": false
+    },
+    {
+      "fighter": "banjo_and_kazooie",
+      "offset": [
+        -23,
+        -50
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "terry",
+      "offset": [
+        -182,
+        120
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "byleth1",
+      "offset": [
+        -219,
+        -330
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "byleth2",
+      "offset": [
+        -219,
+        -330
+      ],
+      "scale": 0.45,
+      "flip": false
+    },
+    {
+      "fighter": "minmin",
+      "offset": [
+        -163,
+        -240
+      ],
+      "scale": 0.35,
+      "flip": false
+    },
+    {
+      "fighter": "steve",
+      "offset": [
+        -16,
+        120
+      ],
+      "scale": 0.3,
+      "flip": false
+    },
+    {
+      "fighter": "sephiroth1",
+      "offset": [
+        -511,
+        -820
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "sephiroth2",
+      "offset": [
+        -511,
+        -820
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "pyra",
+      "offset": [
+        -195,
+        50
+      ],
+      "scale": 1.1,
+      "flip": false
+    },
+    {
+      "fighter": "kazuya1",
+      "offset": [
+        -58,
+        130
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "kazuya2",
+      "offset": [
+        -110,
+        60
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "sora1",
+      "offset": [
+        -234,
+        0
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "sora2",
+      "offset": [
+        -234,
+        0
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "sora3",
+      "offset": [
+        -234,
+        0
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "sora4",
+      "offset": [
+        -234,
+        0
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "dark_pit",
+      "offset": [
+        51,
+        -100
+      ],
+      "scale": 0.85,
+      "flip": false
+    },
+    {
+      "fighter": "lucina",
+      "offset": [
+        -1109,
+        -300
+      ],
+      "scale": 0.9,
+      "flip": false
+    },
+    {
+      "fighter": "daisy",
+      "offset": [
+        -254,
+        80
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "chrom",
+      "offset": [
+        -448,
+        120
+      ],
+      "scale": 0.5,
+      "flip": false
+    },
+    {
+      "fighter": "dark_samus",
+      "offset": [
+        -20,
+        120
+      ],
+      "scale": 0.4,
+      "flip": false
+    },
+    {
+      "fighter": "richter",
+      "offset": [
+        -1182,
+        -600
+      ],
+      "scale": 1.1,
+      "flip": false
+    },
+    {
+      "fighter": "ken",
+      "offset": [
+        -96,
+        -270
+      ],
+      "scale": 0.6,
+      "flip": false
+    },
+    {
+      "fighter": "random1",
+      "offset": [
+        -192,
+        -100
+      ],
+      "scale": 2.0,
+      "flip": false
+    },
+    {
+      "fighter": "random2",
+      "offset": [
+        160,
+        70
+      ],
+      "scale": 0.8,
+      "flip": false
+    }
+  ]
+}
