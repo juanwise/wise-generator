@@ -16,6 +16,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import thumbnailgenerator.dto.Game;
 import thumbnailgenerator.dto.Tournament;
 import thumbnailgenerator.service.games.GameEnumService;
 import thumbnailgenerator.utils.startgg.QueryUtils;
@@ -38,6 +39,7 @@ public class Top8StandingsService {
 
     private @Autowired StartGGService startGGService;
     private @Autowired GameEnumService gameEnumService;
+    private @Autowired TournamentService tournamentService;
 
     @Getter
     public static class Result {
@@ -78,6 +80,8 @@ public class Top8StandingsService {
             throw new IllegalArgumentException("The game of event \"" + event.getEventName()
                     + "\" is not supported by this program.");
         }
+
+        requireTop8Settings(tournament, game);
 
         var entrantIds = event.getStandings().stream()
                 .map(StandingsParser.Standing::getEntrantId)
@@ -128,6 +132,31 @@ public class Top8StandingsService {
             StandingsParser.tallyCharacters(response, new HashSet<>(entrantIds), counts);
         } while (page < totalPages);
         return counts;
+    }
+
+    /**
+     * A Top 8 needs the tournament to have Top 8 settings (slot layout and
+     * character image settings) for the game. Without them generation would
+     * fail with a missing-file error, so say what is wrong instead.
+     */
+    private void requireTop8Settings(Tournament tournament, Game game) {
+        var settings = tournamentService.getTournamentTop8SettingsOrDefault(tournament, game);
+        String imageSettingsFile = null;
+        try {
+            imageSettingsFile = settings.getFighterImageSettingsFile(gameEnumService.getDefaultArtType(game));
+        } catch (RuntimeException ignored) {
+            // no settings for this art type: handled below
+        }
+        if (isBlank(settings.getSlotSettingsFile()) || isBlank(imageSettingsFile)) {
+            throw new IllegalArgumentException("Tournament \"" + tournament.getName()
+                    + "\" has no Top 8 settings for " + game.getName() + ".\n\n"
+                    + "Select a tournament that has Top 8 set up for this game, or add the "
+                    + "Top 8 settings in Edit -> Edit tournament (see the README, \"Top 8 generation\").");
+        }
+    }
+
+    private static boolean isBlank(String value) {
+        return value == null || value.isBlank();
     }
 
     /** Start.gg answers API problems (bad token, rate limit...) with an "errors" entry and no data. */
