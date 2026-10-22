@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -14,10 +13,21 @@ import thumbnailgenerator.enums.interfaces.CharacterEnum;
 @Getter
 @Setter
 @ToString
-@AllArgsConstructor
 public class Player {
     private String  playerName;
     private List<Fighter> fighterList;
+    /** ISO 3166-1 alpha-2 code (upper case) of the player's country; null when unknown. */
+    private String countryCode;
+
+    public Player(String playerName, List<Fighter> fighterList) {
+        this(playerName, fighterList, null);
+    }
+
+    public Player(String playerName, List<Fighter> fighterList, String countryCode) {
+        this.playerName = playerName;
+        this.fighterList = fighterList;
+        this.countryCode = countryCode;
+    }
 
     public static List<Player> generatePreviewPlayers(CharacterEnum[] characterEnums){
         List<Player> list = new ArrayList<>();

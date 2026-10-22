@@ -79,6 +79,7 @@ public class ThumbnailGeneratorController implements Initializable {
     private @FXML PlayerController player2Controller;
     private @FXML Button flipPlayer;
     private @FXML CheckBox saveLocally;
+    private @FXML CheckBox showFlags;
     private @FXML Button saveButton;
     private @FXML Button fromFile;
     private @FXML Menu menuCopyTournament;
@@ -101,6 +102,8 @@ public class ThumbnailGeneratorController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         player1Controller.setParentController(this);
         player2Controller.setParentController(this);
+        player1Controller.bindCountryEnabled(showFlags.selectedProperty());
+        player2Controller.bindCountryEnabled(showFlags.selectedProperty());
         initMenuBars();
         initArtDropdown();
         initLoading();
@@ -113,6 +116,10 @@ public class ThumbnailGeneratorController implements Initializable {
         String nameAux = player1Controller.getPlayer();
         player1Controller.setPlayer(player2Controller.getPlayer());
         player2Controller.setPlayer(nameAux);
+
+        String countryAux = player1Controller.getCountryCode();
+        player1Controller.setCountryCode(player2Controller.getCountryCode());
+        player2Controller.setCountryCode(countryAux);
 
 
         var auxSel = player1Controller.getCharacterSelectList()
@@ -155,6 +162,7 @@ public class ThumbnailGeneratorController implements Initializable {
                 .game(getGame())
                 .imageSettings(imageSettings)
                 .locally(saveLocally.isSelected())
+                .showFlags(showFlags.isSelected())
                 .round(round.getText())
                 .date(date.getText())
                 .players(

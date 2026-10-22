@@ -53,6 +53,23 @@ public class TextService {
     }
 
 
+    /**
+     * Width in pixels the given text takes when drawn with these settings.
+     * Used to place other elements (e.g. country flags) next to the name.
+     */
+    public int measureTextWidth(String text, TextSettings textSettings, boolean isTopText)
+            throws FontNotFoundException {
+        if (text == null || text.isEmpty()) return 0;
+        var fontSize = isTopText ? textSettings.getSizeTop() : textSettings.getSizeBottom();
+        var textFont = new TextFont(textSettings, fontSize);
+        var graphics = new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB).createGraphics();
+        try {
+            return checkTextWidth(splitTextByLanguage(text), textFont, graphics);
+        } finally {
+            graphics.dispose();
+        }
+    }
+
     private BufferedImage generateText(String text, Color color, TextSettings textSettings, boolean isTopText) throws FontNotFoundException {
 
         if (color.equals(Color.BLACK)){

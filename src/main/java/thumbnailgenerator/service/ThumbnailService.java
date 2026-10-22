@@ -58,6 +58,7 @@ import thumbnailgenerator.ui.factory.alert.AlertFactory;
 import thumbnailgenerator.service.json.JSONReaderService;
 import thumbnailgenerator.ui.loading.LoadingState;
 import thumbnailgenerator.utils.thumbnails.CharacterQuantitySettingsSetup;
+import thumbnailgenerator.utils.thumbnails.FlagPlacement;
 
 @Service
 public class ThumbnailService {
@@ -72,6 +73,13 @@ public class ThumbnailService {
     private @Autowired JSONReaderService jsonReaderService;
     private @Autowired GameEnumService gameEnumService;
     private @Autowired ExecutorService executorService;
+    private @Autowired FlagService flagService;
+
+    private static final int FLAG_HEIGHT = 44;
+    private static final int FLAG_GAP = 14;
+    private static final int FLAG_MARGIN = 10;
+    // Height of the box the player's name is drawn in (see TextService).
+    private static final int TEXT_BOX_HEIGHT = 110;
 
     private @Value("${thumbnail.size.width}") Integer thumbnailWidth;
     private @Value("${thumbnail.size.height}") Integer thumbnailHeight;
@@ -184,6 +192,11 @@ public class ThumbnailService {
         LOGGER.debug("Loading {} text settings: {}", thumbnail.getTournament().getName(),
                 fileThumbnailSettings.getTextSettings());
         this.drawText(thumbnail, g2d);
+
+        if (thumbnail.isShowFlags()) {
+            LOGGER.info("Drawing players' country flags");
+            this.drawFlags(thumbnail, g2d);
+        }
         return result;
     }
 
@@ -497,6 +510,42 @@ public class ThumbnailService {
             AlertFactory.displayError("ERROR Mask");
         }
         return characterImage;
+    }
+
+    /**
+     * Draws each player's country flag to the left of their name. Players
+     * without a country, or whose flag is not available, are skipped so the
+     * thumbnail is still generated.
+     */
+    private void drawFlags(Thumbnail thumbnail, Graphics2D g2d)
+            throws FontNotFoundException {
+        var textSettings = fileThumbnailSettings.getTextSettings();
+        var players = thumbnail.getPlayers();
+        for (int i = 0; i < players.size() && i < 2; i++) {
+            var player = players.get(i);
+            var flag = flagService.getFlag(player.getCountryCode());
+            if (flag == null || player.getPlayerName() == null || player.getPlayerName().isEmpty()) {
+                continue;
+            }
+            int flagHeight = FLAG_HEIGHT;
+            int flagWidth = Math.max(1, Math.round(flag.getWidth() * (flagHeight / (float) flag.getHeight())));
+            var scaledFlag = new BufferedImage(flagWidth, flagHeight, BufferedImage.TYPE_INT_ARGB);
+            var flagGraphics = scaledFlag.createGraphics();
+            flagGraphics.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+            flagGraphics.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
+            flagGraphics.drawImage(flag, 0, 0, flagWidth, flagHeight, null);
+            flagGraphics.dispose();
+
+            int textWidth = textService.measureTextWidth(player.getPlayerName(), textSettings, true);
+            var position = FlagPlacement.position(
+                    i, thumbnailWidth / 2, textWidth, flagWidth, flagHeight,
+                    textSettings.getDownOffsetTop()[i], TEXT_BOX_HEIGHT,
+                    FLAG_GAP, FLAG_MARGIN);
+
+            g2d.drawImage(scaledFlag, position[0], position[1], null);
+            g2d.setColor(new Color(0, 0, 0, 160));
+            g2d.drawRect(position[0], position[1], flagWidth - 1, flagHeight - 1);
+        }
     }
 
     private void drawText(Thumbnail thumbnail, Graphics2D g2d)

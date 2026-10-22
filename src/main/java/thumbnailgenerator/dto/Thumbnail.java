@@ -15,6 +15,7 @@ public class Thumbnail extends GeneratedGraphic {
     private Game game;
     private ImageSettings imageSettings;
     private boolean locally;
+    private boolean showFlags;
     private String round;
     private String date;
     private List<Player> players;

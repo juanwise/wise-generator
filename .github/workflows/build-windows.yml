@@ -1,0 +1,69 @@
+name: Build Windows release
+
+# Builds "Thumbnail Generator.exe" on a Windows machine and packages it the same
+# way as the original releases (build/buildRelease.sh): the .exe, README,
+# example files, assets, settings and a bundled Java runtime ("jre" folder).
+#
+# Download the result from the run's page: Actions -> the run -> Artifacts.
+on:
+  push:
+    branches: [ main, 'feature/**' ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '11'
+          cache: maven
+
+      # "install" is the phase that creates the .exe (launch4j runs there).
+      - name: Build (compile, package and create the .exe)
+        shell: bash
+        run: mvn -B clean install -Dmaven.test.skip=true
+
+      # Same idea as build/includeJava.sh. Lets the program run on PCs without Java.
+      # If this step fails, the release is still created and needs Java 11+ installed.
+      - name: Create bundled Java runtime
+        continue-on-error: true
+        shell: bash
+        run: |
+          jlink \
+            --module-path "$JAVA_HOME/jmods" \
+            --add-modules ALL-MODULE-PATH \
+            --output jre \
+            --strip-debug --compress=2 --no-header-files --no-man-pages
+
+      - name: Package release folder
+        shell: pwsh
+        run: |
+          $exe = Get-ChildItem -Path . -Recurse -Filter 'Thumbnail Generator.exe' | Select-Object -First 1
+          if (-not $exe) { throw "Thumbnail Generator.exe was not created by the build." }
+          Write-Host "Found $($exe.FullName)"
+
+          $out = 'release/ThumbnailGenerator'
+          New-Item -ItemType Directory -Force -Path $out | Out-Null
+          Copy-Item $exe.FullName $out
+          Copy-Item README.md, multiThumbnailGenerationExample.txt, top8GenerationExample.txt $out
+
+          New-Item -ItemType Directory -Force -Path "$out/assets" | Out-Null
+          Copy-Item assets/tournaments, assets/masks, assets/documentation "$out/assets" -Recurse
+          Copy-Item settings $out -Recurse
+          if (Test-Path jre) { Copy-Item jre $out -Recurse } else { Write-Host "No bundled jre; Java 11+ will be required." }
+
+          # Never ship a real Start.gg token (same as build/buildRelease.sh)
+          Set-Content -Path "$out/settings/startgg/auth-token.txt" -Value '<set auth token in settings/startgg/auth-token.txt>'
+
+      - name: Upload release folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: ThumbnailGenerator-windows
+          path: release/ThumbnailGenerator
+          if-no-files-found: error
