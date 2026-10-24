@@ -4,370 +4,370 @@
     {
       "fighter": "mario",
       "offset": [
-        0,
-        0
+        116,
+        118
       ],
-      "scale": 0.7,
+      "scale": 0.81,
       "flip": false
     },
     {
       "fighter": "luigi",
       "offset": [
-        0,
-        0
+        132,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.748,
       "flip": false
     },
     {
       "fighter": "peach",
       "offset": [
-        0,
-        0
+        169,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.6,
       "flip": false
     },
     {
       "fighter": "bowser",
       "offset": [
-        0,
-        0
+        7,
+        141
       ],
-      "scale": 0.7,
+      "scale": 0.634,
       "flip": false
     },
     {
       "fighter": "yoshi",
       "offset": [
-        0,
-        0
+        83,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.942,
       "flip": false
     },
     {
       "fighter": "wario",
       "offset": [
-        0,
-        0
+        122,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.787,
       "flip": false
     },
     {
       "fighter": "waluigi",
       "offset": [
-        0,
-        0
+        99,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.88,
       "flip": false
     },
     {
       "fighter": "donkey_kong",
       "offset": [
-        0,
-        0
+        60,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.928,
       "flip": false
     },
     {
       "fighter": "link",
       "offset": [
-        0,
-        0
+        29,
+        116
       ],
-      "scale": 0.7,
+      "scale": 0.847,
       "flip": false
     },
     {
       "fighter": "zelda",
       "offset": [
-        0,
-        0
+        172,
+        116
       ],
-      "scale": 0.7,
+      "scale": 0.588,
       "flip": false
     },
     {
       "fighter": "sheik",
       "offset": [
-        0,
-        0
+        211,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.433,
       "flip": false
     },
     {
       "fighter": "ganondorf",
       "offset": [
-        0,
-        0
+        126,
+        116
       ],
-      "scale": 0.7,
+      "scale": 0.779,
       "flip": false
     },
     {
       "fighter": "pikachu",
       "offset": [
-        0,
-        0
+        48,
+        118
       ],
-      "scale": 0.7,
+      "scale": 0.888,
       "flip": false
     },
     {
       "fighter": "jigglypuff",
       "offset": [
-        0,
-        0
+        102,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.868,
       "flip": false
     },
     {
       "fighter": "pichu",
       "offset": [
-        0,
-        0
+        67,
+        118
       ],
-      "scale": 0.7,
+      "scale": 0.955,
       "flip": false
     },
     {
       "fighter": "lucario",
       "offset": [
-        0,
-        0
+        115,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.793,
       "flip": false
     },
     {
       "fighter": "kirby",
       "offset": [
-        0,
-        0
+        84,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.936,
       "flip": false
     },
     {
       "fighter": "meta_knight",
       "offset": [
-        0,
-        0
+        7,
+        147
       ],
-      "scale": 0.7,
+      "scale": 0.603,
       "flip": false
     },
     {
       "fighter": "bandana_dee",
       "offset": [
-        0,
-        0
+        112,
+        118
       ],
-      "scale": 0.7,
+      "scale": 0.824,
       "flip": false
     },
     {
       "fighter": "fox",
       "offset": [
-        0,
-        0
+        174,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.579,
       "flip": false
     },
     {
       "fighter": "falco",
       "offset": [
-        0,
-        0
+        132,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.748,
       "flip": false
     },
     {
       "fighter": "krystal",
       "offset": [
-        0,
-        0
+        93,
+        116
       ],
-      "scale": 0.7,
+      "scale": 0.901,
       "flip": false
     },
     {
       "fighter": "samus",
       "offset": [
-        0,
-        0
+        159,
+        118
       ],
-      "scale": 0.7,
+      "scale": 0.639,
       "flip": false
     },
     {
       "fighter": "zero_suit_samus",
       "offset": [
-        0,
-        0
+        196,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.493,
       "flip": false
     },
     {
       "fighter": "captain_falcon",
       "offset": [
-        0,
-        0
+        107,
+        116
       ],
-      "scale": 0.7,
+      "scale": 0.848,
       "flip": false
     },
     {
       "fighter": "ness",
       "offset": [
-        0,
-        0
+        116,
+        118
       ],
-      "scale": 0.7,
+      "scale": 0.812,
       "flip": false
     },
     {
       "fighter": "marth",
       "offset": [
-        0,
-        0
+        144,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.703,
       "flip": false
     },
     {
       "fighter": "pit",
       "offset": [
-        0,
-        0
+        120,
+        117
       ],
-      "scale": 0.7,
+      "scale": 0.795,
       "flip": false
     },
     {
       "fighter": "isaac",
       "offset": [
-        0,
-        0
+        117,
+        117
       ],
-      "scale": 0.7,
+      "scale": 0.807,
       "flip": false
     },
     {
       "fighter": "chibi_robo",
       "offset": [
-        0,
-        0
+        52,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.899,
       "flip": false
     },
     {
       "fighter": "mr_game_and_watch",
       "offset": [
-        0,
-        0
+        -10,
+        128
       ],
-      "scale": 0.7,
+      "scale": 0.676,
       "flip": false
     },
     {
       "fighter": "sonic",
       "offset": [
-        0,
-        0
+        69,
+        118
       ],
-      "scale": 0.7,
+      "scale": 0.962,
       "flip": false
     },
     {
       "fighter": "tails",
       "offset": [
-        0,
-        0
+        44,
+        116
       ],
-      "scale": 0.7,
+      "scale": 0.891,
       "flip": false
     },
     {
       "fighter": "mega_man",
       "offset": [
-        0,
-        0
+        65,
+        118
       ],
-      "scale": 0.7,
+      "scale": 0.945,
       "flip": false
     },
     {
       "fighter": "ryu",
       "offset": [
-        0,
-        0
+        121,
+        117
       ],
-      "scale": 0.7,
+      "scale": 0.791,
       "flip": false
     },
     {
       "fighter": "pac_man",
       "offset": [
-        0,
-        0
+        146,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.69,
       "flip": false
     },
     {
       "fighter": "lloyd",
       "offset": [
-        0,
-        0
+        136,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.73,
       "flip": false
     },
     {
       "fighter": "simon",
       "offset": [
-        0,
-        0
+        8,
+        144
       ],
-      "scale": 0.7,
+      "scale": 0.602,
       "flip": false
     },
     {
       "fighter": "bomberman",
       "offset": [
-        0,
-        0
+        150,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.678,
       "flip": false
     },
     {
       "fighter": "black_mage",
       "offset": [
-        0,
-        0
+        89,
+        118
       ],
-      "scale": 0.7,
+      "scale": 0.917,
       "flip": false
     },
     {
       "fighter": "sora",
       "offset": [
-        0,
-        0
+        61,
+        116
       ],
-      "scale": 0.7,
+      "scale": 0.952,
       "flip": false
     },
     {
@@ -382,46 +382,55 @@
     {
       "fighter": "goku",
       "offset": [
-        0,
-        0
+        162,
+        118
       ],
-      "scale": 0.7,
+      "scale": 0.628,
       "flip": false
     },
     {
       "fighter": "luffy",
       "offset": [
-        0,
-        0
+        74,
+        118
       ],
-      "scale": 0.7,
+      "scale": 0.977,
       "flip": false
     },
     {
       "fighter": "naruto",
       "offset": [
-        0,
-        0
+        114,
+        118
       ],
-      "scale": 0.7,
+      "scale": 0.82,
       "flip": false
     },
     {
       "fighter": "ichigo",
       "offset": [
-        0,
-        0
+        85,
+        113
       ],
-      "scale": 0.7,
+      "scale": 0.934,
       "flip": false
     },
     {
       "fighter": "sandbag",
       "offset": [
-        0,
-        0
+        178,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.565,
+      "flip": false
+    },
+    {
+      "fighter": "king_dedede",
+      "offset": [
+        27,
+        116
+      ],
+      "scale": 0.843,
       "flip": false
     },
     {

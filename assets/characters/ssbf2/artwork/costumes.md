@@ -1,0 +1,49 @@
+# Smash Flash 2 costumes (alt number = position on the source sheet, left to right, top to bottom)
+
+- Bandana Dee (`bandana_dee`): 12 costumes
+- Black Mage (`black_mage`): 12 costumes
+- Bomberman (`bomberman`): 12 costumes
+- Bowser (`bowser`): 12 costumes
+- Captain Falcon (`captain_falcon`): 12 costumes
+- Chibi-Robo (`chibi_robo`): 12 costumes
+- Donkey Kong (`donkey_kong`): 8 costumes
+- Falco (`falco`): 12 costumes
+- Fox (`fox`): 8 costumes
+- Ganondorf (`ganondorf`): 12 costumes
+- Goku (`goku`): 12 costumes
+- Ichigo (`ichigo`): 12 costumes
+- Isaac (`isaac`): 12 costumes
+- Jigglypuff (`jigglypuff`): 12 costumes
+- King Dedede (`king_dedede`): 12 costumes
+- Kirby (`kirby`): 12 costumes
+- Krystal (`krystal`): 12 costumes
+- Link (`link`): 12 costumes
+- Lloyd (`lloyd`): 12 costumes
+- Lucario (`lucario`): 12 costumes
+- Luffy (`luffy`): 12 costumes
+- Luigi (`luigi`): 12 costumes
+- Mario (`mario`): 12 costumes
+- Marth (`marth`): 8 costumes
+- Mega Man (`mega_man`): 12 costumes
+- Meta Knight (`meta_knight`): 12 costumes
+- Mr. Game & Watch (`mr_game_and_watch`): 12 costumes
+- Naruto (`naruto`): 12 costumes
+- Ness (`ness`): 12 costumes
+- PAC-MAN (`pac_man`): 12 costumes
+- Peach (`peach`): 12 costumes
+- Pichu (`pichu`): 12 costumes
+- Pikachu (`pikachu`): 12 costumes
+- Pit (`pit`): 12 costumes
+- Ryu (`ryu`): 12 costumes
+- Samus (`samus`): 12 costumes
+- Sandbag (`sandbag`): 12 costumes
+- Sheik (`sheik`): 12 costumes
+- Simon (`simon`): 12 costumes
+- Sonic (`sonic`): 12 costumes
+- Sora (`sora`): 12 costumes
+- Tails (`tails`): 12 costumes
+- Waluigi (`waluigi`): 12 costumes
+- Wario (`wario`): 12 costumes
+- Yoshi (`yoshi`): 12 costumes
+- Zelda (`zelda`): 12 costumes
+- Zero Suit Samus (`zero_suit_samus`): 12 costumes

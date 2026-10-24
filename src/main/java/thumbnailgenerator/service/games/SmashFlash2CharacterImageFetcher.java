@@ -14,10 +14,15 @@ public class SmashFlash2CharacterImageFetcher extends CharacterImageFetcher {
     @Value("${character-image.ssbf2.artwork.path}")
     private String artworkPath;
 
+    // Smash Flash 2 images are hosted in this program's own repository (assets/characters/ssbf2/...),
+    // not in the shared character image repository.
+    @Value("${character-image.ssbf2.base-url}")
+    private String ssbf2BaseUrl;
+
     @Override
     public URL getOnlineUrl(Fighter fighter, FighterArtTypeEnum artType, boolean backup)
             throws MalformedURLException {
         String urlString = artworkPath + "/" + fighter.getUrlName() + "/" + fighter.getAlt() +".png";
-        return new URL(getHostAndBranchVersion(backup) + urlString);
+        return new URL(ssbf2BaseUrl + urlString);
     }
 }

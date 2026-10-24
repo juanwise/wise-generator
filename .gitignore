@@ -34,6 +34,7 @@ target/
 assets/characters/*
 # Project M images are hosted in this repository (the program downloads them from here)
 !assets/characters/ssbpm/
+!assets/characters/ssbf2/
 assets/fighters/*
 generated_thumbnails/*
 generated_top8/*

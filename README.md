@@ -132,15 +132,14 @@ Images are stored in the following folder:
 Fighters without images yet (Bowser, Fox, Falco, Jigglypuff, Mewtwo, Squirtle, Charizard, Ness, Ike) need their PNGs added by hand.
 To import more costumes, run `python3 build/importProjectMRenders.py <path to Renders-and-Cosmetics>`.
 
-**Smash Flash 2** has no images yet, so they must be added by hand: one PNG per costume (alt) in
-
-    assets/characters/ssbf2/artwork/[URL_NAME]/[ALT].png
-
-using the character's URL name (see `settings/thumbnails/images/ssbf2/default.json`) and the alt number as file name.
-Tick **Save/Load fighters' image locally** so the program reads files from your own folder first.
+**Smash Flash 2** also has its images included in this repository
+(`assets/characters/ssbf2/artwork/[URL_NAME]/[ALT].png`, 47 fighters, 4 to 12 costumes each; alt 1 is the first costume
+on the original costume sheet, see `assets/characters/ssbf2/artwork/costumes.md`). Rayman has no images yet.
+To import more costume sheets, run `python3 build/importSmashFlash2Renders.py <path to Renders-and-Cosmetics>`.
 
 Fighter offsets/scales are set in `settings/thumbnails/images/ssbpm/default.json` and
 `settings/thumbnails/images/ssbf2/default.json`.
+Images for other characters can be added by hand: one PNG per costume in the same folders, with the alt number as file name.
 These two games are not detected automatically from Start.gg links.
 
 ### Thumbnail Image Settings 
