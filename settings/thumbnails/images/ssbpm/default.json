@@ -4,46 +4,46 @@
     {
       "fighter": "mario",
       "offset": [
-        0,
-        0
+        89,
+        109
       ],
-      "scale": 0.7,
+      "scale": 0.886,
       "flip": false
     },
     {
       "fighter": "luigi",
       "offset": [
-        0,
-        0
+        125,
+        106
       ],
-      "scale": 0.7,
+      "scale": 0.89,
       "flip": false
     },
     {
       "fighter": "peach",
       "offset": [
-        0,
-        0
+        94,
+        78
       ],
-      "scale": 0.7,
+      "scale": 0.938,
       "flip": false
     },
     {
       "fighter": "wario",
       "offset": [
-        0,
-        0
+        122,
+        109
       ],
-      "scale": 0.7,
+      "scale": 0.858,
       "flip": false
     },
     {
       "fighter": "yoshi",
       "offset": [
-        0,
-        0
+        114,
+        91
       ],
-      "scale": 0.7,
+      "scale": 0.856,
       "flip": false
     },
     {
@@ -58,28 +58,28 @@
     {
       "fighter": "donkey_kong",
       "offset": [
-        0,
-        0
+        120,
+        130
       ],
-      "scale": 0.7,
+      "scale": 0.837,
       "flip": false
     },
     {
       "fighter": "diddy_kong",
       "offset": [
-        0,
-        0
+        152,
+        120
       ],
-      "scale": 0.7,
+      "scale": 0.867,
       "flip": false
     },
     {
       "fighter": "captain_falcon",
       "offset": [
-        0,
-        0
+        114,
+        124
       ],
-      "scale": 0.7,
+      "scale": 0.862,
       "flip": false
     },
     {
@@ -103,64 +103,64 @@
     {
       "fighter": "wolf",
       "offset": [
-        0,
-        0
+        83,
+        101
       ],
-      "scale": 0.7,
+      "scale": 0.898,
       "flip": false
     },
     {
       "fighter": "link",
       "offset": [
-        0,
-        0
+        100,
+        89
       ],
-      "scale": 0.7,
+      "scale": 0.92,
       "flip": false
     },
     {
       "fighter": "toon_link",
       "offset": [
-        0,
-        0
+        96,
+        121
       ],
-      "scale": 0.7,
+      "scale": 0.866,
       "flip": false
     },
     {
       "fighter": "zelda",
       "offset": [
-        0,
-        0
+        91,
+        92
       ],
-      "scale": 0.7,
+      "scale": 0.914,
       "flip": false
     },
     {
       "fighter": "sheik",
       "offset": [
-        0,
-        0
+        115,
+        126
       ],
-      "scale": 0.7,
+      "scale": 0.858,
       "flip": false
     },
     {
       "fighter": "ganondorf",
       "offset": [
-        0,
-        0
+        96,
+        79
       ],
-      "scale": 0.7,
+      "scale": 0.702,
       "flip": false
     },
     {
       "fighter": "pikachu",
       "offset": [
-        0,
-        0
+        123,
+        92
       ],
-      "scale": 0.7,
+      "scale": 0.699,
       "flip": false
     },
     {
@@ -193,10 +193,10 @@
     {
       "fighter": "ivysaur",
       "offset": [
-        0,
-        0
+        107,
+        98
       ],
-      "scale": 0.7,
+      "scale": 0.889,
       "flip": false
     },
     {
@@ -211,28 +211,28 @@
     {
       "fighter": "lucario",
       "offset": [
-        0,
-        0
+        112,
+        121
       ],
-      "scale": 0.7,
+      "scale": 0.866,
       "flip": false
     },
     {
       "fighter": "samus",
       "offset": [
-        0,
-        0
+        105,
+        119
       ],
-      "scale": 0.7,
+      "scale": 0.869,
       "flip": false
     },
     {
       "fighter": "zero_suit_samus",
       "offset": [
-        0,
-        0
+        111,
+        125
       ],
-      "scale": 0.7,
+      "scale": 0.644,
       "flip": false
     },
     {
@@ -247,55 +247,55 @@
     {
       "fighter": "lucas",
       "offset": [
-        0,
-        0
+        138,
+        115
       ],
-      "scale": 0.7,
+      "scale": 0.875,
       "flip": false
     },
     {
       "fighter": "kirby",
       "offset": [
-        0,
-        0
+        55,
+        60
       ],
-      "scale": 0.7,
+      "scale": 0.839,
       "flip": false
     },
     {
       "fighter": "meta_knight",
       "offset": [
-        0,
-        0
+        64,
+        73
       ],
-      "scale": 0.7,
+      "scale": 1.065,
       "flip": false
     },
     {
       "fighter": "king_dedede",
       "offset": [
-        0,
-        0
+        129,
+        130
       ],
-      "scale": 0.7,
+      "scale": 0.802,
       "flip": false
     },
     {
       "fighter": "marth",
       "offset": [
-        0,
-        0
+        78,
+        84
       ],
-      "scale": 0.7,
+      "scale": 0.928,
       "flip": false
     },
     {
       "fighter": "roy",
       "offset": [
-        0,
-        0
+        109,
+        112
       ],
-      "scale": 0.7,
+      "scale": 0.88,
       "flip": false
     },
     {
@@ -310,73 +310,73 @@
     {
       "fighter": "mr_game_and_watch",
       "offset": [
-        0,
-        0
+        110,
+        79
       ],
-      "scale": 0.7,
+      "scale": 0.874,
       "flip": false
     },
     {
       "fighter": "rob",
       "offset": [
-        0,
-        0
+        77,
+        84
       ],
-      "scale": 0.7,
+      "scale": 0.928,
       "flip": false
     },
     {
       "fighter": "ice_climbers",
       "offset": [
-        0,
-        0
+        114,
+        126
       ],
-      "scale": 0.7,
+      "scale": 0.858,
       "flip": false
     },
     {
       "fighter": "pit",
       "offset": [
-        0,
-        0
+        113,
+        104
       ],
-      "scale": 0.7,
+      "scale": 0.894,
       "flip": false
     },
     {
       "fighter": "olimar",
       "offset": [
-        0,
-        0
+        120,
+        131
       ],
-      "scale": 0.7,
+      "scale": 0.837,
       "flip": false
     },
     {
       "fighter": "snake",
       "offset": [
-        0,
-        0
+        98,
+        116
       ],
-      "scale": 0.7,
+      "scale": 0.873,
       "flip": false
     },
     {
       "fighter": "sonic",
       "offset": [
-        0,
-        0
+        77,
+        101
       ],
-      "scale": 0.7,
+      "scale": 0.898,
       "flip": false
     },
     {
       "fighter": "knuckles",
       "offset": [
-        0,
-        0
+        106,
+        104
       ],
-      "scale": 0.7,
+      "scale": 0.894,
       "flip": false
     },
     {

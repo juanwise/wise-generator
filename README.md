@@ -15,7 +15,7 @@ This allows TOs to speed up VODs' release process. Below are the compatible game
 - MARVEL Tōkon: Fighting Souls
 - Granblue Fantasy Versus: Rising
 - Under Night In-Birth II Sys:Celes
-- Project M (Smash Brawl mod)
+- Project Plus (Smash Brawl mod)
 - Smash Flash 2
 
 ![tg_main_page.png](./assets/documentation/tg_main_page.png)
@@ -125,8 +125,8 @@ Images are stored in the following folder:
 
     assets/characters/[GAME]/[ART_TYPE]/
 
-#### Project M and Smash Flash 2
-**Project M** has character images included in this repository (`assets/characters/ssbpm/artwork/[URL_NAME]/[ALT].png`,
+#### Project Plus and Smash Flash 2
+**Project Plus** has character images included in this repository (`assets/characters/ssbpm/artwork/[URL_NAME]/[ALT].png`,
 384x480 portraits, 33 of the fighters). The program downloads them automatically. The alt number is the costume number:
 `assets/characters/ssbpm/artwork/costumes.md` lists which costume each number is (Standard costumes come first).
 Fighters without images yet (Bowser, Fox, Falco, Jigglypuff, Mewtwo, Squirtle, Charizard, Ness, Ike) need their PNGs added by hand.

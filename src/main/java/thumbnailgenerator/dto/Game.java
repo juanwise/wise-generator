@@ -17,7 +17,7 @@ public enum Game {
     GBFVR("gbfvr", "Granblue Fantasy Versus: Rising", 48548),
     UNIST2("unist2", "Under Night In-Birth II Sys:Celes", 50203),
     // Smash mods/fangames: no Start.gg game id (-1), so they are not auto-detected from Start.gg links
-    SSBPM("ssbpm", "Project M", -1),
+    SSBPM("ssbpm", "Project Plus", -1),
     SSBF2("ssbf2", "Smash Flash 2", -1);
 
     private String code;

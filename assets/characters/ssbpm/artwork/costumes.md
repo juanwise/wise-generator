@@ -1,4 +1,4 @@
-# Project M costumes (alt number -> source file)
+# Project Plus costumes (alt number -> source file)
 
 
 ## Captain Falcon (`captain_falcon`)
