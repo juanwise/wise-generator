@@ -185,6 +185,34 @@ def frame(images):
     return {"offset": [int(round(ox)), int(round(oy))], "scale": scale}
 
 
+def write_character(code, crops, aligned=False):
+    """Writes the enlarged costume images and icons of one character; returns its thumbnail placement.
+    With aligned=True all crops have the same size and are already positioned relative to each other."""
+    cw, ch = max(c.width for c in crops), max(c.height for c in crops)
+    f = TARGET_HEIGHT / ch
+    out_w, out_h = round(cw * f) + 2 * PAD, round(ch * f) + 2 * PAD
+    for out in (ART_OUT / code, ICON_OUT / code):
+        if out.exists():
+            shutil.rmtree(out)
+        out.mkdir(parents=True)
+    finals = []
+    for i, c in enumerate(crops, 1):
+        big = c.resize((round(c.width * f), round(c.height * f)), Image.LANCZOS)
+        canvas = Image.new("RGBA", (out_w, out_h), (0, 0, 0, 0))
+        if aligned:
+            canvas.alpha_composite(big, (PAD, PAD))
+        else:
+            canvas.alpha_composite(big, ((out_w - big.width) // 2, out_h - PAD - big.height))   # bottom-centred
+        canvas.save(ART_OUT / code / f"{i}.png", optimize=True)
+        finals.append(canvas)
+        icon = Image.new("RGBA", (64, 64), (0, 0, 0, 0))
+        small = c.copy()
+        small.thumbnail((60, 60), Image.LANCZOS)
+        icon.alpha_composite(small, ((64 - small.width) // 2, (64 - small.height) // 2))
+        icon.save(ICON_OUT / code / f"{i}.png")
+    return frame(finals)
+
+
 def main(src):
     sheets = sorted((Path(src) / "smash flash 2 renders").glob("SSF2_*_Costumes.jpg"))
     counts, frames, index = {}, {}, ["# Smash Flash 2 costumes (alt number = position on the source sheet, left to right, top to bottom)\n"]
@@ -195,28 +223,12 @@ def main(src):
         if len(crops) < 4:
             print(f"SKIPPED {name}: could not separate its costumes ({len(crops)} found)")
             continue
-        cw, ch = max(c.width for c in crops), max(c.height for c in crops)
-        f = TARGET_HEIGHT / ch
-        out_w, out_h = round(cw * f) + 2 * PAD, round(ch * f) + 2 * PAD
-        for out in (ART_OUT / code, ICON_OUT / code):
-            if out.exists():
-                shutil.rmtree(out)
-            out.mkdir(parents=True)
-        finals = []
-        for i, c in enumerate(crops, 1):
-            big = c.resize((round(c.width * f), round(c.height * f)), Image.LANCZOS)
-            canvas = Image.new("RGBA", (out_w, out_h), (0, 0, 0, 0))
-            canvas.alpha_composite(big, ((out_w - big.width) // 2, out_h - PAD - big.height))   # bottom-centred
-            canvas.save(ART_OUT / code / f"{i}.png", optimize=True)
-            finals.append(canvas)
-            icon = Image.new("RGBA", (64, 64), (0, 0, 0, 0))
-            small = c.copy()
-            small.thumbnail((60, 60), Image.LANCZOS)
-            icon.alpha_composite(small, ((64 - small.width) // 2, (64 - small.height) // 2))
-            icon.save(ICON_OUT / code / f"{i}.png")
+        frames[code] = write_character(code, crops)
         counts[code] = len(crops)
-        frames[code] = frame(finals)
         index.append(f"- {name.replace('_%26_', ' & ').replace('_', ' ')} (`{code}`): {len(crops)} costumes")
+    rayman = ART_OUT / "rayman"
+    if rayman.is_dir():
+        index.append(f"- Rayman (`rayman`): {len(list(rayman.glob('*.png')))} costumes (see importRaymanCostumes.py)")
     (ART_OUT / "costumes.md").write_text("\n".join(index) + "\n", encoding="utf-8")
 
     settings = json.loads(SETTINGS.read_text(encoding="utf-8"))

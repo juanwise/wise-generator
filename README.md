@@ -133,8 +133,9 @@ Fighters without images yet (Bowser, Fox, Falco, Jigglypuff, Mewtwo, Squirtle, C
 To import more costumes, run `python3 build/importProjectMRenders.py <path to Renders-and-Cosmetics>`.
 
 **Smash Flash 2** also has its images included in this repository
-(`assets/characters/ssbf2/artwork/[URL_NAME]/[ALT].png`, 47 fighters, 4 to 12 costumes each; alt 1 is the first costume
-on the original costume sheet, see `assets/characters/ssbf2/artwork/costumes.md`). Rayman has no images yet.
+(`assets/characters/ssbf2/artwork/[URL_NAME]/[ALT].png`, 48 fighters, 8 to 12 costumes each; alt 1 is the first costume
+on the original costume sheet, see `assets/characters/ssbf2/artwork/costumes.md`). Rayman's costumes were cut out by hand because his sprite is made of floating parts
+(`python3 build/importRaymanCostumes.py <folder with 1.png .. 12.png>`).
 To import more costume sheets, run `python3 build/importSmashFlash2Renders.py <path to Renders-and-Cosmetics>`.
 
 Fighter offsets/scales are set in `settings/thumbnails/images/ssbpm/default.json` and

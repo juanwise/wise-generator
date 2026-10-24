@@ -373,10 +373,10 @@
     {
       "fighter": "rayman",
       "offset": [
-        0,
-        0
+        95,
+        116
       ],
-      "scale": 0.7,
+      "scale": 0.891,
       "flip": false
     },
     {

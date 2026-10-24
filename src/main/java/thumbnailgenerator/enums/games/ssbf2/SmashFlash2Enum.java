@@ -48,7 +48,7 @@ public enum SmashFlash2Enum implements CharacterEnum {
     BOMBERMAN("Bomberman", "bomberman", -1, 12),
     BLACK_MAGE("Black Mage", "black_mage", -1, 12),
     SORA("Sora", "sora", -1, 12),
-    RAYMAN("Rayman", "rayman", -1, 1),
+    RAYMAN("Rayman", "rayman", -1, 12),
     GOKU("Goku", "goku", -1, 12),
     LUFFY("Luffy", "luffy", -1, 12),
     NARUTO("Naruto", "naruto", -1, 12),
