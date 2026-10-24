@@ -127,10 +127,11 @@ Images are stored in the following folder:
 
 #### Project Plus and Smash Flash 2
 **Project Plus** has character images included in this repository (`assets/characters/ssbpm/artwork/[URL_NAME]/[ALT].png`,
-384x480 portraits, 33 of the fighters). The program downloads them automatically. The alt number is the costume number:
-`assets/characters/ssbpm/artwork/costumes.md` lists which costume each number is (Standard costumes come first).
-Fighters without images yet (Bowser, Fox, Falco, Jigglypuff, Mewtwo, Squirtle, Charizard, Ness, Ike) need their PNGs added by hand.
-To import more costumes, run `python3 build/importProjectMRenders.py <path to Renders-and-Cosmetics>`.
+384x480 portraits, 42 fighters). The program downloads them automatically. The alt number is the costume number:
+`assets/characters/ssbpm/artwork/costumes.md` lists which costume each number is. For most fighters the Standard
+costumes come first. Some fighters are missing their original costumes, which can be added by hand.
+To import more costumes, run `python3 build/importProjectMRenders.py <path to Renders-and-Cosmetics>`
+(and `python3 build/importProjectMSheets.py <folder>` for 5x3 costume sheets).
 
 **Smash Flash 2** also has its images included in this repository
 (`assets/characters/ssbf2/artwork/[URL_NAME]/[ALT].png`, 48 fighters, 8 to 12 costumes each; alt 1 is the first costume

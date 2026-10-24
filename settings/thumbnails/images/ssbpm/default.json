@@ -49,10 +49,10 @@
     {
       "fighter": "bowser",
       "offset": [
-        0,
-        0
+        100,
+        124
       ],
-      "scale": 0.7,
+      "scale": 0.908,
       "flip": false
     },
     {
@@ -85,19 +85,19 @@
     {
       "fighter": "fox",
       "offset": [
-        0,
-        0
+        116,
+        116
       ],
-      "scale": 0.7,
+      "scale": 0.873,
       "flip": false
     },
     {
       "fighter": "falco",
       "offset": [
-        0,
-        0
+        120,
+        109
       ],
-      "scale": 0.7,
+      "scale": 0.886,
       "flip": false
     },
     {
@@ -166,28 +166,28 @@
     {
       "fighter": "jigglypuff",
       "offset": [
-        0,
-        0
+        73,
+        65
       ],
-      "scale": 0.7,
+      "scale": 1.036,
       "flip": false
     },
     {
       "fighter": "mewtwo",
       "offset": [
-        0,
-        0
+        116,
+        95
       ],
-      "scale": 0.7,
+      "scale": 0.909,
       "flip": false
     },
     {
       "fighter": "squirtle",
       "offset": [
-        0,
-        0
+        130,
+        88
       ],
-      "scale": 0.7,
+      "scale": 0.891,
       "flip": false
     },
     {
@@ -202,10 +202,10 @@
     {
       "fighter": "charizard",
       "offset": [
-        0,
-        0
+        122,
+        115
       ],
-      "scale": 0.7,
+      "scale": 0.828,
       "flip": false
     },
     {
@@ -238,10 +238,10 @@
     {
       "fighter": "ness",
       "offset": [
-        0,
-        0
+        128,
+        124
       ],
-      "scale": 0.7,
+      "scale": 0.802,
       "flip": false
     },
     {
@@ -301,10 +301,10 @@
     {
       "fighter": "ike",
       "offset": [
-        0,
-        0
+        104,
+        100
       ],
-      "scale": 0.7,
+      "scale": 0.902,
       "flip": false
     },
     {
