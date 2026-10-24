@@ -54,6 +54,46 @@ public class TournamentService {
     public void loadTournamentsList(){
         List<TournamentRead> tournamentReadList = jsonReaderService.loadTournament();
         tournamentsList = tournamentReadList.stream().map(t -> tournamentFactory.createTournament(t)).collect(Collectors.toList());
+        tournamentsList.forEach(this::addSettingsForMissingGames);
+    }
+
+    /**
+     * Tournaments saved before a game was added to the program have no thumbnail settings for it, which made
+     * generating a thumbnail for that game fail. Give each tournament settings for every game, copying the
+     * foreground, background and text settings of one of its existing games and using the new game's default
+     * fighter image settings.
+     */
+    private void addSettingsForMissingGames(Tournament tournament) {
+        var existing = tournament.getThumbnailSettings();
+        if (existing == null || existing.isEmpty()) {
+            return;
+        }
+        var template = existing.stream()
+                .filter(s -> Game.SSBU.equals(s.getGame()))
+                .findFirst()
+                .orElse(existing.get(0));
+        for (Game game : Game.values()) {
+            if (tournament.getThumbnailSettingsByGame(game) != null) {
+                continue;
+            }
+            LOGGER.info("Adding settings for {} to tournament {}.", game, tournament.getName());
+            List<FighterArtSettings> artSettings = new ArrayList<>();
+            for (var artType : gameEnumService.getAllFighterArtTypes(game)) {
+                artSettings.add(
+                        FighterArtSettings.builder()
+                                .artType(artType)
+                                .fighterImageSettingsPath(gameEnumService.getDefaultFighterArtTypeSettingsFile(game, artType))
+                                .build()
+                );
+            }
+            existing.add(new FileThumbnailSettings(
+                    game,
+                    template.getThumbnailForeground(),
+                    template.getBackground(),
+                    artSettings,
+                    template.getTextSettings()
+            ));
+        }
     }
 
     public List<Tournament> getTournamentsList(){
