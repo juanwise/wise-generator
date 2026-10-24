@@ -129,9 +129,11 @@ Images are stored in the following folder:
 **Project Plus** has character images included in this repository (`assets/characters/ssbpm/artwork/[URL_NAME]/[ALT].png`,
 384x480 portraits, 42 fighters). The program downloads them automatically. The alt number is the costume number:
 `assets/characters/ssbpm/artwork/costumes.md` lists which costume each number is. For most fighters the Standard
-costumes come first. Some fighters are missing their original costumes, which can be added by hand.
-To import more costumes, run `python3 build/importProjectMRenders.py <path to Renders-and-Cosmetics>`
-(and `python3 build/importProjectMSheets.py <folder>` for 5x3 costume sheets).
+costumes come first. Captain Falcon, Lucas, Peach, Toon Link and Zelda still have only a few costumes.
+To import more costumes, run `python3 build/importProjectMRenders.py <path to Renders-and-Cosmetics>`,
+then `python3 build/importProjectMSheets.py <folder>` for 5x3 costume sheets and
+`python3 build/importProjectMRegularSheets.py <folder>` for sheets with a fighter's regular costumes
+(those go first and costumes that already exist are not duplicated).
 
 **Smash Flash 2** also has its images included in this repository
 (`assets/characters/ssbf2/artwork/[URL_NAME]/[ALT].png`, 48 fighters, 8 to 12 costumes each; alt 1 is the first costume

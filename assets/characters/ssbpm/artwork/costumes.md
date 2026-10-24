@@ -19,20 +19,38 @@
 
 ## Dedede (`king_dedede`)
 
-- 1: Dedede_Shogun_P+_1
-- 2: Dedede_Shogun_P+_2
-- 3: Dedede_Shogun_P+_3
-- 4: Dedede_Shogun_P+_4
-- 5: Dedede_Shogun_P+_5
-
+- 1: regular costume 1 of the sheet (left to right, top to bottom)
+- 2: regular costume 2 of the sheet (left to right, top to bottom)
+- 3: regular costume 3 of the sheet (left to right, top to bottom)
+- 4: regular costume 4 of the sheet (left to right, top to bottom)
+- 5: regular costume 5 of the sheet (left to right, top to bottom)
+- 6: regular costume 6 of the sheet (left to right, top to bottom)
+- 7: regular costume 7 of the sheet (left to right, top to bottom)
+- 8: regular costume 8 of the sheet (left to right, top to bottom)
+- 9: regular costume 9 of the sheet (left to right, top to bottom)
+- 10: regular costume 10 of the sheet (left to right, top to bottom)
+- 11: regular costume 11 of the sheet (left to right, top to bottom)
+- 12: regular costume 12 of the sheet (left to right, top to bottom)
+- 13: regular costume 13 of the sheet (left to right, top to bottom)
+- 14: regular costume 14 of the sheet (left to right, top to bottom)
+- 15: regular costume 15 of the sheet (left to right, top to bottom)
 ## Diddy Kong (`diddy_kong`)
 
-- 1: Diddy_Hooded_P+_1
-- 2: Diddy_Hooded_P+_2
-- 3: Diddy_Hooded_P+_3
-- 4: Diddy_Hooded_P+_4
-- 5: Diddy_Hooded_P+_5
-
+- 1: regular costume 1 of the sheet (left to right, top to bottom)
+- 2: regular costume 2 of the sheet (left to right, top to bottom)
+- 3: regular costume 3 of the sheet (left to right, top to bottom)
+- 4: regular costume 4 of the sheet (left to right, top to bottom)
+- 5: regular costume 5 of the sheet (left to right, top to bottom)
+- 6: regular costume 6 of the sheet (left to right, top to bottom)
+- 7: regular costume 7 of the sheet (left to right, top to bottom)
+- 8: regular costume 8 of the sheet (left to right, top to bottom)
+- 9: regular costume 9 of the sheet (left to right, top to bottom)
+- 10: regular costume 10 of the sheet (left to right, top to bottom)
+- 11: Diddy_Hooded_P+_1
+- 12: Diddy_Hooded_P+_2
+- 13: Diddy_Hooded_P+_3
+- 14: Diddy_Hooded_P+_4
+- 15: Diddy_Hooded_P+_5
 ## Donkey Kong (`donkey_kong`)
 
 - 1: Donkey_Kong_Standard_1
@@ -161,16 +179,24 @@
 
 ## Link (`link`)
 
-- 1: Link_Fierce_Deity_1
-- 2: Link_OoT_1
-- 3: Link_OoT_2
-- 4: Link_OoT_3
-- 5: Link_OoT_4
-- 6: Link_OoT_5
-- 7: Link_OoT_6
-- 8: Link_OoT_EX1
-- 9: Link_OoT_EX2
-
+- 1: regular costume 1 of the sheet (left to right, top to bottom)
+- 2: regular costume 2 of the sheet (left to right, top to bottom)
+- 3: regular costume 3 of the sheet (left to right, top to bottom)
+- 4: regular costume 4 of the sheet (left to right, top to bottom)
+- 5: regular costume 5 of the sheet (left to right, top to bottom)
+- 6: regular costume 6 of the sheet (left to right, top to bottom)
+- 7: regular costume 7 of the sheet (left to right, top to bottom)
+- 8: regular costume 8 of the sheet (left to right, top to bottom)
+- 9: regular costume 9 of the sheet (left to right, top to bottom)
+- 10: Link_OoT_1
+- 11: Link_OoT_2
+- 12: Link_OoT_3
+- 13: Link_OoT_4
+- 14: Link_OoT_5
+- 15: Link_OoT_6
+- 16: Link_Fierce_Deity_1
+- 17: Link_OoT_EX1
+- 18: Link_OoT_EX2
 ## Lucario (`lucario`)
 
 - 1: Lucario_Standard_1
@@ -210,37 +236,58 @@
 
 ## Luigi (`luigi`)
 
-- 1: Luigi_Casino_P+_1
-- 2: Luigi_Casino_P+_2
-- 3: Luigi_Casino_P+_3
-- 4: Luigi_Casino_P+_4
-- 5: Luigi_MrL_P+_1
-- 6: Luigi_MrL_P+_2
-- 7: Luigi_MrL_P+_3
-- 8: Luigi_MrL_P+_4
-
+- 1: regular costume 1 of the sheet (left to right, top to bottom)
+- 2: regular costume 2 of the sheet (left to right, top to bottom)
+- 3: regular costume 3 of the sheet (left to right, top to bottom)
+- 4: regular costume 4 of the sheet (left to right, top to bottom)
+- 5: regular costume 5 of the sheet (left to right, top to bottom)
+- 6: regular costume 6 of the sheet (left to right, top to bottom)
+- 7: regular costume 7 of the sheet (left to right, top to bottom)
+- 8: Luigi_MrL_P+_1
+- 9: Luigi_MrL_P+_2
+- 10: Luigi_MrL_P+_3
+- 11: Luigi_MrL_P+_4
+- 12: Luigi_Casino_P+_1
+- 13: Luigi_Casino_P+_2
+- 14: Luigi_Casino_P+_3
+- 15: Luigi_Casino_P+_4
 ## Mario (`mario`)
 
-- 1: Mario_Builder_P+_1
-- 2: Mario_Builder_P+_2
-- 3: Mario_Builder_P+_3
-- 4: Mario_Builder_P+_4
-- 5: Mario_Doctor_P+_1
-- 6: Mario_Doctor_P+_2
-- 7: Mario_Doctor_P+_3
-- 8: Mario_Doctor_P+_4
-- 9: Mario_Doctor_P+_5
-- 10: Mario_Doctor_P+_6
-- 11: Mario_Doctor_P+_7
-- 12: Mario_Vacation_P+_1
-
+- 1: regular costume 1 of the sheet (left to right, top to bottom)
+- 2: regular costume 2 of the sheet (left to right, top to bottom)
+- 3: regular costume 3 of the sheet (left to right, top to bottom)
+- 4: regular costume 4 of the sheet (left to right, top to bottom)
+- 5: regular costume 5 of the sheet (left to right, top to bottom)
+- 6: regular costume 6 of the sheet (left to right, top to bottom)
+- 7: Mario_Doctor_P+_1
+- 8: Mario_Doctor_P+_2
+- 9: Mario_Doctor_P+_3
+- 10: Mario_Doctor_P+_4
+- 11: Mario_Doctor_P+_5
+- 12: Mario_Doctor_P+_6
+- 13: Mario_Builder_P+_1
+- 14: Mario_Builder_P+_2
+- 15: Mario_Builder_P+_3
+- 16: Mario_Builder_P+_4
+- 17: Mario_Doctor_P+_7
+- 18: Mario_Vacation_P+_1
 ## Marth (`marth`)
 
-- 1: Marth_Holy_War_P+_1
-- 2: Marth_Holy_War_P+_2
-- 3: Marth_Holy_War_P+_3
-- 4: Marth_Holy_War_P+_4
-
+- 1: regular costume 1 of the sheet (left to right, top to bottom)
+- 2: regular costume 2 of the sheet (left to right, top to bottom)
+- 3: regular costume 3 of the sheet (left to right, top to bottom)
+- 4: regular costume 4 of the sheet (left to right, top to bottom)
+- 5: regular costume 5 of the sheet (left to right, top to bottom)
+- 6: regular costume 6 of the sheet (left to right, top to bottom)
+- 7: regular costume 7 of the sheet (left to right, top to bottom)
+- 8: Marth_Holy_War_P+_1
+- 9: Marth_Holy_War_P+_2
+- 10: Marth_Holy_War_P+_3
+- 11: Marth_Holy_War_P+_4
+- 12: regular costume 12 of the sheet (left to right, top to bottom)
+- 13: regular costume 13 of the sheet (left to right, top to bottom)
+- 14: regular costume 14 of the sheet (left to right, top to bottom)
+- 15: regular costume 15 of the sheet (left to right, top to bottom)
 ## Meta Knight (`meta_knight`)
 
 - 1: Meta_Knight_Standard_1
@@ -264,11 +311,24 @@
 
 ## Mr. Game and Watch (`mr_game_and_watch`)
 
-- 1: Mr._Game_and_Watch_Judge_1
-- 2: Mr._Game_and_Watch_Judge_2
-- 3: Mr._Game_and_Watch_Judge_3
-- 4: Mr._Game_and_Watch_Judge_4
-
+- 1: regular costume 1 of the sheet (left to right, top to bottom)
+- 2: regular costume 2 of the sheet (left to right, top to bottom)
+- 3: regular costume 3 of the sheet (left to right, top to bottom)
+- 4: regular costume 4 of the sheet (left to right, top to bottom)
+- 5: regular costume 5 of the sheet (left to right, top to bottom)
+- 6: regular costume 6 of the sheet (left to right, top to bottom)
+- 7: regular costume 7 of the sheet (left to right, top to bottom)
+- 8: regular costume 8 of the sheet (left to right, top to bottom)
+- 9: regular costume 9 of the sheet (left to right, top to bottom)
+- 10: regular costume 10 of the sheet (left to right, top to bottom)
+- 11: regular costume 11 of the sheet (left to right, top to bottom)
+- 12: regular costume 12 of the sheet (left to right, top to bottom)
+- 13: regular costume 13 of the sheet (left to right, top to bottom)
+- 14: regular costume 14 of the sheet (left to right, top to bottom)
+- 15: Mr._Game_and_Watch_Judge_1
+- 16: Mr._Game_and_Watch_Judge_2
+- 17: Mr._Game_and_Watch_Judge_3
+- 18: Mr._Game_and_Watch_Judge_4
 ## Olimar (`olimar`)
 
 - 1: Olimar_Standard_1
@@ -318,20 +378,39 @@
 
 ## Pit (`pit`)
 
-- 1: Pit_Retro_PPlus_1
-- 2: Pit_Retro_PPlus_2
-- 3: Pit_Retro_PPlus_3
-- 4: Pit_Retro_PPlus_4
-- 5: Pit_Retro_PPlus_5
-
+- 1: regular costume 1 of the sheet (left to right, top to bottom)
+- 2: regular costume 2 of the sheet (left to right, top to bottom)
+- 3: regular costume 3 of the sheet (left to right, top to bottom)
+- 4: regular costume 4 of the sheet (left to right, top to bottom)
+- 5: regular costume 5 of the sheet (left to right, top to bottom)
+- 6: regular costume 6 of the sheet (left to right, top to bottom)
+- 7: regular costume 7 of the sheet (left to right, top to bottom)
+- 8: regular costume 8 of the sheet (left to right, top to bottom)
+- 9: regular costume 9 of the sheet (left to right, top to bottom)
+- 10: regular costume 10 of the sheet (left to right, top to bottom)
+- 11: Pit_Retro_PPlus_1
+- 12: Pit_Retro_PPlus_2
+- 13: Pit_Retro_PPlus_3
+- 14: Pit_Retro_PPlus_4
+- 15: Pit_Retro_PPlus_5
 ## ROB (`rob`)
 
-- 1: Rob_Wii_Pplus_1
-- 2: Rob_Wii_Pplus_2
-- 3: Rob_Wii_Pplus_3
-- 4: Rob_Wii_Pplus_4
-- 5: Rob_Wii_Pplus_5
-
+- 1: regular costume 1 of the sheet (left to right, top to bottom)
+- 2: regular costume 2 of the sheet (left to right, top to bottom)
+- 3: regular costume 3 of the sheet (left to right, top to bottom)
+- 4: regular costume 4 of the sheet (left to right, top to bottom)
+- 5: regular costume 5 of the sheet (left to right, top to bottom)
+- 6: regular costume 6 of the sheet (left to right, top to bottom)
+- 7: regular costume 7 of the sheet (left to right, top to bottom)
+- 8: regular costume 8 of the sheet (left to right, top to bottom)
+- 9: regular costume 9 of the sheet (left to right, top to bottom)
+- 10: regular costume 10 of the sheet (left to right, top to bottom)
+- 11: regular costume 11 of the sheet (left to right, top to bottom)
+- 12: Rob_Wii_Pplus_1
+- 13: Rob_Wii_Pplus_2
+- 14: Rob_Wii_Pplus_3
+- 15: Rob_Wii_Pplus_4
+- 16: Rob_Wii_Pplus_5
 ## Roy (`roy`)
 
 - 1: Roy_Standard_1
@@ -443,29 +522,48 @@
 
 ## Wario (`wario`)
 
-- 1: Wario_Biker_1
-- 2: Wario_Biker_2
-- 3: Wario_Biker_3
-- 4: Wario_Biker_4
-- 5: Wario_Biker_5
-- 6: Wario_Biker_6
-- 7: Wario_Tycoon_PPlus_1
-- 8: Wario_Tycoon_PPlus_2
-- 9: Wario_Tycoon_PPlus_3
-- 10: Wario_Tycoon_PPlus_4
-- 11: Wario_Tycoon_PPlus_5
-- 12: Wario_Tycoon_PPlus_6
-
+- 1: regular costume 1 of the sheet (left to right, top to bottom)
+- 2: regular costume 2 of the sheet (left to right, top to bottom)
+- 3: regular costume 3 of the sheet (left to right, top to bottom)
+- 4: regular costume 4 of the sheet (left to right, top to bottom)
+- 5: regular costume 5 of the sheet (left to right, top to bottom)
+- 6: regular costume 6 of the sheet (left to right, top to bottom)
+- 7: Wario_Biker_1
+- 8: Wario_Biker_2
+- 9: Wario_Biker_4
+- 10: Wario_Biker_3
+- 11: Wario_Biker_6
+- 12: Wario_Biker_5
+- 13: Wario_Tycoon_PPlus_1
+- 14: Wario_Tycoon_PPlus_2
+- 15: Wario_Tycoon_PPlus_3
+- 16: Wario_Tycoon_PPlus_4
+- 17: Wario_Tycoon_PPlus_5
+- 18: Wario_Tycoon_PPlus_6
 ## Wolf (`wolf`)
 
-- 1: Wolf_Retro_PM_6
-- 2: Wolf_Zero_Plus_1
-- 3: Wolf_Zero_Plus_2
-- 4: Wolf_Zero_Plus_3
-- 5: Wolf_Zero_Plus_4
-- 6: Wolf_Zero_Plus_5
-- 7: Wolf_Zero_Plus_6
-
+- 1: regular costume 1 of the sheet (left to right, top to bottom)
+- 2: regular costume 2 of the sheet (left to right, top to bottom)
+- 3: regular costume 3 of the sheet (left to right, top to bottom)
+- 4: regular costume 4 of the sheet (left to right, top to bottom)
+- 5: regular costume 5 of the sheet (left to right, top to bottom)
+- 6: regular costume 6 of the sheet (left to right, top to bottom)
+- 7: regular costume 7 of the sheet (left to right, top to bottom)
+- 8: regular costume 8 of the sheet (left to right, top to bottom)
+- 9: regular costume 9 of the sheet (left to right, top to bottom)
+- 10: regular costume 10 of the sheet (left to right, top to bottom)
+- 11: regular costume 11 of the sheet (left to right, top to bottom)
+- 12: regular costume 12 of the sheet (left to right, top to bottom)
+- 13: regular costume 13 of the sheet (left to right, top to bottom)
+- 14: regular costume 14 of the sheet (left to right, top to bottom)
+- 15: regular costume 15 of the sheet (left to right, top to bottom)
+- 16: Wolf_Retro_PM_6
+- 17: Wolf_Zero_Plus_1
+- 18: Wolf_Zero_Plus_2
+- 19: Wolf_Zero_Plus_3
+- 20: Wolf_Zero_Plus_4
+- 21: Wolf_Zero_Plus_5
+- 22: Wolf_Zero_Plus_6
 ## Yoshi (`yoshi`)
 
 - 1: Yoshi_Standard_1

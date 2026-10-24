@@ -13,7 +13,7 @@
     {
       "fighter": "luigi",
       "offset": [
-        125,
+        126,
         106
       ],
       "scale": 0.89,
@@ -31,10 +31,10 @@
     {
       "fighter": "wario",
       "offset": [
-        122,
-        109
+        124,
+        113
       ],
-      "scale": 0.858,
+      "scale": 0.849,
       "flip": false
     },
     {
@@ -67,10 +67,10 @@
     {
       "fighter": "diddy_kong",
       "offset": [
-        152,
-        120
+        144,
+        121
       ],
-      "scale": 0.867,
+      "scale": 0.866,
       "flip": false
     },
     {
@@ -104,9 +104,9 @@
       "fighter": "wolf",
       "offset": [
         83,
-        101
+        100
       ],
-      "scale": 0.898,
+      "scale": 0.9,
       "flip": false
     },
     {
@@ -277,16 +277,16 @@
         129,
         130
       ],
-      "scale": 0.802,
+      "scale": 0.8,
       "flip": false
     },
     {
       "fighter": "marth",
       "offset": [
-        78,
-        84
+        81,
+        85
       ],
-      "scale": 0.928,
+      "scale": 0.926,
       "flip": false
     },
     {
@@ -310,19 +310,19 @@
     {
       "fighter": "mr_game_and_watch",
       "offset": [
-        110,
-        79
+        88,
+        66
       ],
-      "scale": 0.874,
+      "scale": 0.972,
       "flip": false
     },
     {
       "fighter": "rob",
       "offset": [
-        77,
-        84
+        78,
+        81
       ],
-      "scale": 0.928,
+      "scale": 0.932,
       "flip": false
     },
     {
@@ -337,10 +337,10 @@
     {
       "fighter": "pit",
       "offset": [
-        113,
-        104
+        114,
+        126
       ],
-      "scale": 0.894,
+      "scale": 0.858,
       "flip": false
     },
     {
