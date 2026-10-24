@@ -32,6 +32,8 @@ hs_err_pid*
 #folders
 target/
 assets/characters/*
+# Project M images are hosted in this repository (the program downloads them from here)
+!assets/characters/ssbpm/
 assets/fighters/*
 generated_thumbnails/*
 generated_top8/*
