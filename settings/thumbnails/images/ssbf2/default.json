@@ -1,0 +1,437 @@
+{
+  "mirrorPlayer2": true,
+  "fighters": [
+    {
+      "fighter": "mario",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "luigi",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "peach",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "bowser",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "yoshi",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "wario",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "waluigi",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "donkey_kong",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "link",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "zelda",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "sheik",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "ganondorf",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "pikachu",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "jigglypuff",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "pichu",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "lucario",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "kirby",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "meta_knight",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "bandana_dee",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "fox",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "falco",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "krystal",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "samus",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "zero_suit_samus",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "captain_falcon",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "ness",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "marth",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "pit",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "isaac",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "chibi_robo",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "mr_game_and_watch",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "sonic",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "tails",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "mega_man",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "ryu",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "pac_man",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "lloyd",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "simon",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "bomberman",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "black_mage",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "sora",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "rayman",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "goku",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "luffy",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "naruto",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "ichigo",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "sandbag",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    },
+    {
+      "fighter": "random",
+      "offset": [
+        0,
+        0
+      ],
+      "scale": 0.7,
+      "flip": false
+    }
+  ]
+}

@@ -15,6 +15,8 @@ This allows TOs to speed up VODs' release process. Below are the compatible game
 - MARVEL Tōkon: Fighting Souls
 - Granblue Fantasy Versus: Rising
 - Under Night In-Birth II Sys:Celes
+- Project M (Smash Brawl mod)
+- Smash Flash 2
 
 ![tg_main_page.png](./assets/documentation/tg_main_page.png)
 
@@ -122,6 +124,20 @@ As an option, Thumbnail Generator can save those downloaded images to use them f
 Images are stored in the following folder:
 
     assets/characters/[GAME]/[ART_TYPE]/
+
+#### Project M and Smash Flash 2
+These two games have no images in the online repository, so their character images must be added by hand.
+Place one PNG per costume (alt) in the following folders, using the character's URL name (see each game's
+settings file) and the alt number as file name:
+
+    assets/characters/ssbpm/artwork/[URL_NAME]/[ALT].png    (Project M)
+    assets/characters/ssbf2/artwork/[URL_NAME]/[ALT].png    (Smash Flash 2)
+
+Example: `assets/characters/ssbpm/artwork/mario/1.png`.
+Fighter offsets/scales are set in `settings/thumbnails/images/ssbpm/default.json` and
+`settings/thumbnails/images/ssbf2/default.json`.
+Tick **Save/Load fighters' image locally** when generating so the program reads these files.
+These two games are not detected automatically from Start.gg links.
 
 ### Thumbnail Image Settings 
 For thumbnails, images need to be scaled and repositioned in other to be printed 

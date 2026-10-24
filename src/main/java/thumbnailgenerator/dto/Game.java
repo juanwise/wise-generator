@@ -15,7 +15,10 @@ public enum Game {
     GGST("ggst", "Guilty Gear: Strive", 33945),
     TOKON("tokon", "MARVEL Tōkon: Fighting Souls", 107706),
     GBFVR("gbfvr", "Granblue Fantasy Versus: Rising", 48548),
-    UNIST2("unist2", "Under Night In-Birth II Sys:Celes", 50203);
+    UNIST2("unist2", "Under Night In-Birth II Sys:Celes", 50203),
+    // Smash mods/fangames: no Start.gg game id (-1), so they are not auto-detected from Start.gg links
+    SSBPM("ssbpm", "Project M", -1),
+    SSBF2("ssbf2", "Smash Flash 2", -1);
 
     private String code;
     private String name;
