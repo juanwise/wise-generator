@@ -126,17 +126,21 @@ Images are stored in the following folder:
     assets/characters/[GAME]/[ART_TYPE]/
 
 #### Project M and Smash Flash 2
-These two games have no images in the online repository, so their character images must be added by hand.
-Place one PNG per costume (alt) in the following folders, using the character's URL name (see each game's
-settings file) and the alt number as file name:
+**Project M** has character images included in this repository (`assets/characters/ssbpm/artwork/[URL_NAME]/[ALT].png`,
+384x480 portraits, 33 of the fighters). The program downloads them automatically. The alt number is the costume number:
+`assets/characters/ssbpm/artwork/costumes.md` lists which costume each number is (Standard costumes come first).
+Fighters without images yet (Bowser, Fox, Falco, Jigglypuff, Mewtwo, Squirtle, Charizard, Ness, Ike) need their PNGs added by hand.
+To import more costumes, run `python3 build/importProjectMRenders.py <path to Renders-and-Cosmetics>`.
 
-    assets/characters/ssbpm/artwork/[URL_NAME]/[ALT].png    (Project M)
-    assets/characters/ssbf2/artwork/[URL_NAME]/[ALT].png    (Smash Flash 2)
+**Smash Flash 2** has no images yet, so they must be added by hand: one PNG per costume (alt) in
 
-Example: `assets/characters/ssbpm/artwork/mario/1.png`.
+    assets/characters/ssbf2/artwork/[URL_NAME]/[ALT].png
+
+using the character's URL name (see `settings/thumbnails/images/ssbf2/default.json`) and the alt number as file name.
+Tick **Save/Load fighters' image locally** so the program reads files from your own folder first.
+
 Fighter offsets/scales are set in `settings/thumbnails/images/ssbpm/default.json` and
 `settings/thumbnails/images/ssbf2/default.json`.
-Tick **Save/Load fighters' image locally** when generating so the program reads these files.
 These two games are not detected automatically from Start.gg links.
 
 ### Thumbnail Image Settings 
